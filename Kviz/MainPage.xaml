@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kviz.MainPage">
+
+    <Grid RowDefinitions="Auto,*">
+        <Grid
+            BackgroundColor="#a92a21"
+            Row="0"
+            HeightRequest="160"
+            RowDefinitions="Auto,Auto"
+            Padding="0">
+
+            <Image
+                 Source="gzr_logo.png"
+                 HeightRequest="120"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                 Aspect="AspectFit"
+                 SemanticProperties.Description="Gzr logo icon" 
+                 Grid.Row="0"
+                />
+
+            <Label
+                Text="Izberi željeno tematiko!"
+                FontSize="20"
+                TextColor="White"
+                Grid.Row="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+        </Grid>
+
+        <ScrollView Grid.Row="1">
+            <Grid Padding="20" RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Kviz Option -->
+                <Frame Grid.Row="0" HasShadow="True" CornerRadius="10" BackgroundColor="#E3F2FD" HeightRequest="60" Padding="0">
+                    <Label Text="KVIZ" 
+                           FontSize="40"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnKvizTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+
+                <!-- Orientacija Option -->
+                <Frame Grid.Row="1" HasShadow="True" CornerRadius="10" BackgroundColor="#FFF3E0" HeightRequest="60" Padding="0">
+                    <Label Text="ORIENTACIJA" 
+                           FontSize="40"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center">
+
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnKvizTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

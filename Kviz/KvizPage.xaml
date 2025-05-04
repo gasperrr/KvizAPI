@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kviz.KvizPage"
+             Title="KvizPage">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Timer Display -->
+        <Grid HeightRequest="30" BackgroundColor="#DDD" x:Name="TimerBarContainer">
+            <BoxView x:Name="TimerBar"
+                     BackgroundColor="Green"
+                     HorizontalOptions="Start"
+                     VerticalOptions="FillAndExpand"
+                     WidthRequest="0" />
+
+            <Label x:Name="TimerText"
+                   Text="60"
+                   FontSize="16"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold" />
+        </Grid>
+
+        <!-- Question -->
+            <Label x:Name="QuestionLabel"
+               Text="What is the capital of France?"
+               FontSize="20"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               Padding="10" />
+
+            <!-- Answers -->
+            <VerticalStackLayout Spacing="10">
+                <Button Text="Berlin" Clicked="OnAnswerClicked"/>
+                <Button Text="Madrid" Clicked="OnAnswerClicked"/>
+                <Button Text="Paris" Clicked="OnAnswerClicked"/>
+                <Button Text="Rome" Clicked="OnAnswerClicked"/>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ContentPage>
