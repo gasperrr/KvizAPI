@@ -62,9 +62,9 @@
                            VerticalOptions="Center"
                            HorizontalOptions="Center">
 
-                        <Label.GestureRecognizers>
+                        <!--<Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnKvizTapped" />
-                        </Label.GestureRecognizers>
+                        </Label.GestureRecognizers>-->
                     </Label>
                 </Frame>
 

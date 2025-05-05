@@ -1,77 +1,144 @@
 using System.Timers;
 using Microsoft.Maui.Graphics;
+using Newtonsoft.Json;
+using Kviz.Models;
 
-namespace Kviz;
-
-public partial class KvizPage : ContentPage
+namespace Kviz
 {
-    private const int TotalTime = 60;
-    private int timeLeft = TotalTime;
-    private System.Timers.Timer quizTimer;
-
-    public KvizPage()
+    public partial class KvizPage : ContentPage
     {
-        InitializeComponent();
-        StartTimer();
-    }
+        private const double TotalTime = 60000; // 60 seconds
+        private double timeLeft = TotalTime;
+        private System.Timers.Timer quizTimer;
 
-    private void StartTimer()
-    {
-        quizTimer = new System.Timers.Timer(1000); // tick every second
-        quizTimer.Elapsed += OnTimerElapsed;
-        quizTimer.Start();
-    }
+        private int questionCount = 0;
+        private int correctCount = 0;
+        private List<Question> questions = new();
+        private string correctAnswer;
 
-    private void OnTimerElapsed(object sender, ElapsedEventArgs e)
-    {
-        timeLeft--;
-
-        MainThread.BeginInvokeOnMainThread(() =>
+        public KvizPage()
         {
-            // Update timer text
-            TimerText.Text = timeLeft.ToString();
-
-            // Update bar width
-            double progress = (double)timeLeft / TotalTime;
-            double containerWidth = TimerBarContainer.Width;
-            TimerBar.WidthRequest = containerWidth * progress;
-
-            // Color gradient from green to red
-            TimerBar.BackgroundColor = GetColorGradient(progress);
-
-            // Stop when time is up
-            if (timeLeft <= 0)
-            {
-                quizTimer.Stop();
-                TimerBar.WidthRequest = 0;
-                TimerText.Text = "0";
-                DisplayAlert("Time's Up!", "You ran out of time.", "OK");
-            }
-        });
-    }
-
-    private Color GetColorGradient(double progress)
-    {
-        // From green (#00C853) to red (#D50000)
-        int r = (int)(213 * (1 - progress)); // red increases as time decreases
-        int g = (int)(200 * progress);       // green decreases
-        return Color.FromRgb(r, g, 0);
-    }
-
-    private async void OnAnswerClicked(object sender, EventArgs e)
-    {
-        quizTimer.Stop();
-
-        var button = sender as Button;
-        var selectedAnswer = button.Text;
-
-        if (selectedAnswer == "Paris")
-        {
-            await DisplayAlert("Correct!", "That's the right answer.", "Next");
+            InitializeComponent();
+            LoadQuestions();
+            ShuffleAndTrimQuestions();
+            LoadQuestion(); // First question
+            StartTimer();
         }
-        else
+
+        // Load and parse the embedded JSON file
+        private void LoadQuestions()
         {
-            await DisplayAlert("Wrong!", "That's not correct.", "Try Again");
+            var assembly = typeof(KvizPage).Assembly;
+
+            using Stream stream = assembly.GetManifestResourceStream("Kviz.Resources.Raw.questions.txt");
+            using StreamReader reader = new StreamReader(stream);
+            string fileContent = reader.ReadToEnd();
+
+            questions = JsonConvert.DeserializeObject<List<Question>>(fileContent);
+        }
+
+        // Shuffle questions and build 4 options per question
+        private void ShuffleAndTrimQuestions()
+        {
+            var rnd = new Random();
+
+            // Shuffle questions and pick 10
+            questions = questions.OrderBy(q => rnd.Next()).Take(10).ToList();
+
+            foreach (var q in questions)
+            {
+                // Select 3 random correct answers from *other* questions
+                var distractors = questions
+                    .Where(x => x.CorrectAnswer != q.CorrectAnswer)
+                    .Select(x => x.CorrectAnswer)
+                    .Distinct()
+                    .OrderBy(x => rnd.Next())
+                    .Take(3)
+                    .ToList();
+
+                // Combine correct + distractors and shuffle
+                distractors.Add(q.CorrectAnswer);
+                q.Options = distractors.OrderBy(_ => rnd.Next()).ToList();
+            }
+        }
+
+        private void LoadQuestion()
+        {
+            if (questionCount >= 10)
+            {
+                ShowResults();
+                return;
+            }
+
+            var question = questions[questionCount];
+            var options = question.Options;
+
+            QuestionLabel.Text = question.QuestionText;
+            OptionA.Text = options[0];
+            OptionB.Text = options[1];
+            OptionC.Text = options[2];
+            OptionD.Text = options[3];
+
+            correctAnswer = question.CorrectAnswer;
+        }
+
+        private void StartTimer()
+        {
+            quizTimer = new System.Timers.Timer(50); // 20 updates per second
+            quizTimer.Elapsed += OnTimerElapsed;
+            quizTimer.Start();
+        }
+
+        private void OnTimerElapsed(object sender, ElapsedEventArgs e)
+        {
+            timeLeft -= 50;
+
+            MainThread.BeginInvokeOnMainThread(() =>
+            {
+                TimerText.Text = ((int)timeLeft / 1000).ToString();
+                double progress = timeLeft / TotalTime;
+                TimerBar.WidthRequest = TimerBarContainer.Width * progress;
+                TimerBar.BackgroundColor = GetColorGradient(progress);
+
+                if (timeLeft <= 0)
+                {
+                    quizTimer.Stop();
+                    TimerText.Text = "0";
+                    TimerBar.WidthRequest = 0;
+                    DisplayAlert("Time's Up!", "You ran out of time.", "OK");
+                    ShowResults();
+                }
+            });
+        }
+
+        private Color GetColorGradient(double progress)
+        {
+            int r = (int)(213 * (1 - progress)); // red increases as time decreases
+            int g = (int)(200 * progress);       // green decreases
+            return Color.FromRgb(r, g, 0);
+        }
+
+        private async void OnAnswerClicked(object sender, EventArgs e)
+        {
+            quizTimer.Stop(); // Optional: pause on answer
+
+            var button = sender as Button;
+            var selectedAnswer = button.Text;
+
+            if (selectedAnswer == correctAnswer)
+                correctCount++;
+
+            questionCount++;
+            LoadQuestion(); // Show next
+
+            quizTimer.Start(); // Optional: resume
+        }
+
+        private async void ShowResults()
+        {
+            double percentage = (double)correctCount / 10 * 100;
+            await DisplayAlert("Quiz Finished", $"Your score: {percentage:F1}%", "OK");
+            await Navigation.PopAsync(); // Return to main page
         }
     }
 }

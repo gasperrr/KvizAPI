@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "questionText": "What is the capital of France?",
+        "correctAnswer": "Paris"
+    },
+    {
+        "id": 2,
+        "questionText": "Which planet is closest to the Sun?",
+        "correctAnswer": "Mercury"
+    },
+    {
+        "id": 3,
+        "questionText": "What is the largest ocean on Earth?",
+        "correctAnswer": "Pacific"
+    },
+    {
+        "id": 4,
+        "questionText": "Which country is known as the Land of the Rising Sun?",
+        "correctAnswer": "Japan"
+    },
+    {
+        "id": 5,
+        "questionText": "What is the capital of Japan?",
+        "correctAnswer": "Tokyo"
+    },
+    {
+        "id": 6,
+        "questionText": "What is the speed of light?",
+        "correctAnswer": "299,792 km/s"
+    },
+    {
+        "id": 7,
+        "questionText": "What is the largest mammal?",
+        "correctAnswer": "Whale"
+    },
+    {
+        "id": 8,
+        "questionText": "Who invented the telephone?",
+        "correctAnswer": "Alexander Graham Bell"
+    },
+    {
+        "id": 9,
+        "questionText": "What is the tallest mountain on Earth?",
+        "correctAnswer": "Mount Everest"
+    },
+    {
+        "id": 10,
+        "questionText": "Which is the largest planet in our solar system?",
+        "correctAnswer": "Jupiter"
+    }
+]

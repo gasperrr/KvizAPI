@@ -473,6 +473,5 @@ C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-windows10.0.19041.0\w
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
-C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
-C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Kviz.sourcelink.json
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll

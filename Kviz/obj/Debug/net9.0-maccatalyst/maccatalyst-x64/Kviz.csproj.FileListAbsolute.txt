@@ -297,6 +297,5 @@ C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccataly
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.pdb
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.genruntimeconfig.cache
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\ref\Kviz.dll
-C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
-C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.sourcelink.json
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Newtonsoft.Json.dll

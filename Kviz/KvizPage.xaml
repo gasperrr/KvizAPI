@@ -6,7 +6,7 @@
 
     <VerticalStackLayout Padding="20" Spacing="20">
 
-            <!-- Timer Display -->
+        <!-- Timer Display -->
         <Grid HeightRequest="30" BackgroundColor="#DDD" x:Name="TimerBarContainer">
             <BoxView x:Name="TimerBar"
                      BackgroundColor="Green"
@@ -17,27 +17,27 @@
             <Label x:Name="TimerText"
                    Text="60"
                    FontSize="16"
-                   TextColor="White"
+                   TextColor="Black"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    FontAttributes="Bold" />
         </Grid>
 
         <!-- Question -->
-            <Label x:Name="QuestionLabel"
+        <Label x:Name="QuestionLabel"
                Text="What is the capital of France?"
                FontSize="20"
                HorizontalOptions="Center"
                HorizontalTextAlignment="Center"
                Padding="10" />
 
-            <!-- Answers -->
-            <VerticalStackLayout Spacing="10">
-                <Button Text="Berlin" Clicked="OnAnswerClicked"/>
-                <Button Text="Madrid" Clicked="OnAnswerClicked"/>
-                <Button Text="Paris" Clicked="OnAnswerClicked"/>
-                <Button Text="Rome" Clicked="OnAnswerClicked"/>
-            </VerticalStackLayout>
-
+        <!-- Answers -->
+        <VerticalStackLayout Spacing="10">
+            <Button x:Name="OptionA" Text="Option A" Clicked="OnAnswerClicked" />
+            <Button x:Name="OptionB" Text="Option B" Clicked="OnAnswerClicked" />
+            <Button x:Name="OptionC" Text="Option C" Clicked="OnAnswerClicked" />
+            <Button x:Name="OptionD" Text="Option D" Clicked="OnAnswerClicked" />
         </VerticalStackLayout>
-    </ContentPage>
+
+    </VerticalStackLayout>
+</ContentPage>
