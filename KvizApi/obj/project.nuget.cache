@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "2cG2afTXArE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\KvizApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Uporabnik\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.1\\microsoft.aspnetcore.openapi.9.0.1.nupkg.sha512",
+    "C:\\Users\\Uporabnik\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -128,6 +128,7 @@ namespace Kviz
             if (selectedAnswer == correctAnswer)
                 correctCount++;
 
+
             questionCount++;
             LoadQuestion(); // Show next
 
