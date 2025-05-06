@@ -1,7 +1,9 @@
 using System.Timers;
 using Microsoft.Maui.Graphics;
 using Newtonsoft.Json;
+using System.Net.Http;
 using Kviz.Models;
+using Kviz.Services;
 
 namespace Kviz
 {
@@ -26,16 +28,46 @@ namespace Kviz
         }
 
         // Load and parse the embedded JSON file
-        private void LoadQuestions()
+        //private void LoadQuestions()
+        //{
+        //    var assembly = typeof(KvizPage).Assembly;
+
+        //    using Stream stream = assembly.GetManifestResourceStream("Kviz.Resources.Raw.questions.txt");
+        //    using StreamReader reader = new StreamReader(stream);
+        //    string fileContent = reader.ReadToEnd();
+
+        //    questions = JsonConvert.DeserializeObject<List<Question>>(fileContent);
+        //}
+
+        private async void LoadQuestions()
         {
-            var assembly = typeof(KvizPage).Assembly;
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    var response = await client.GetStringAsync("https://localhost:7169/api/questions");
+                    questions = JsonConvert.DeserializeObject<List<Question>>(response);
 
-            using Stream stream = assembly.GetManifestResourceStream("Kviz.Resources.Raw.questions.txt");
-            using StreamReader reader = new StreamReader(stream);
-            string fileContent = reader.ReadToEnd();
+                    if (questions == null || questions.Count == 0)
+                    {
+                        await DisplayAlert("Error", "No questions returned from the API.", "OK");
+                        return;
+                    }
 
-            questions = JsonConvert.DeserializeObject<List<Question>>(fileContent);
+                    // Reset counters and load the first question
+                    questionCount = 0;
+                    correctCount = 0;
+                    LoadQuestion(); // Load the first question
+                }
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Error", $"Failed to load questions: {ex.Message}", "OK");
+            }
         }
+
+
+
 
         // Shuffle questions and build 4 options per question
         private void ShuffleAndTrimQuestions()
@@ -141,5 +173,7 @@ namespace Kviz
             await DisplayAlert("Quiz Finished", $"Your score: {percentage:F1}%", "OK");
             await Navigation.PopAsync(); // Return to main page
         }
+
+        private readonly ApiService _apiService = new ApiService();
     }
 }
