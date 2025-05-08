@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KvizApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5795e18ef6314ec228fa4dea4cc04bec16934909")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec5804bd387f9dd730d25f4993ad85c2ca6c6f10")]
 [assembly: System.Reflection.AssemblyProductAttribute("KvizApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KvizApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

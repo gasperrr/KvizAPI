@@ -10,7 +10,7 @@ namespace Kviz
 {
     public partial class KvizPage : ContentPage
     {
-        private const double TotalTime = 60000; // 60 seconds
+        private const double TotalTime = 20000; // 60 seconds
         private double timeLeft = TotalTime;
         private System.Timers.Timer quizTimer;
 
@@ -19,12 +19,14 @@ namespace Kviz
         private List<Question> questions = new();
         private string correctAnswer;
 
+        private int score = 0;
+
         public KvizPage()
         {
             InitializeComponent();
-            
+
         }
-        
+
         protected override async void OnAppearing()
         {
             base.OnAppearing();
@@ -50,7 +52,7 @@ namespace Kviz
                 {
                     client.Timeout = new TimeSpan(0, 1, 0);
                     System.Diagnostics.Debug.WriteLine("Requesting API...");
-                    
+
                     var response = await client.GetStringAsync("https://10.0.2.2:7169/api/questions");
                     System.Diagnostics.Debug.WriteLine("Response received!");
 
@@ -111,9 +113,11 @@ namespace Kviz
 
         private void LoadQuestion()
         {
-            if (questionCount >= 10)
+            OptionA.IsEnabled = OptionB.IsEnabled = OptionC.IsEnabled = OptionD.IsEnabled = true;
+            if (questionCount >= questions.Count)  // Ensure this is the last question
             {
                 ShowResults();
+                quizTimer.Stop();  // Stop the timer after the last question
                 return;
             }
 
@@ -127,6 +131,15 @@ namespace Kviz
             OptionD.Text = options[3];
 
             correctAnswer = question.CorrectAnswer;
+
+            // Reset button styles
+            foreach (var btn in new[] { OptionA, OptionB, OptionC, OptionD })
+            {
+                btn.BackgroundColor = Colors.Purple;
+                btn.TextColor = Colors.Black;
+                btn.IsEnabled = true;
+            }
+            timeLeft = TotalTime;
         }
 
         private void StartTimer()
@@ -139,7 +152,10 @@ namespace Kviz
         private void OnTimerElapsed(object sender, ElapsedEventArgs e)
         {
             timeLeft -= 50;
-
+            if (questionCount >= questions.Count)  // Ensure this is the last question
+            {
+                quizTimer.Stop();
+            }
             MainThread.BeginInvokeOnMainThread(() =>
             {
                 TimerText.Text = ((int)timeLeft / 1000).ToString();
@@ -167,16 +183,46 @@ namespace Kviz
 
         private async void OnAnswerClicked(object sender, EventArgs e)
         {
-            quizTimer.Stop(); // Optional: pause on answer
-
             var button = sender as Button;
-            var selectedAnswer = button.Text;
+            var selectedAnswer = button?.Text;
 
-            if (selectedAnswer == correctAnswer)
+            // Disable all buttons to prevent double-tapping
+            OptionA.IsEnabled = OptionB.IsEnabled = OptionC.IsEnabled = OptionD.IsEnabled = false;
+
+            // Color all buttons: green if correct, red if selected and wrong
+            foreach (var btn in new[] { OptionA, OptionB, OptionC, OptionD })
+            {
+                if (btn.Text == correctAnswer)
+                {
+                    btn.BackgroundColor = Colors.Green;
+                    btn.TextColor = Colors.White;
+                }
+                else if (btn == button)
+                {
+                    btn.BackgroundColor = Colors.Red;
+                    btn.TextColor = Colors.White;
+                }
+            }
+
+            bool isCorrect = selectedAnswer == correctAnswer;
+
+            if (isCorrect)
+            {
                 correctCount++;
 
+                // Calculate bonus: scale 15s to 10 pts
+                int timeBonus = (int)((timeLeft / 15000.0) * 10);
+                score += timeBonus;
+            }
+            // Show feedback immediately
+            string feedback = isCorrect ? "Correct!" : $"Wrong!\nCorrect answer: {correctAnswer}";
+            ScoreLabel.Text = $"Score: {score}";
+            await DisplayAlert("Result", feedback, "Next");
+            // Short delay so user sees color before moving on
+            await Task.Delay(1000);
 
             questionCount++;
+           
             LoadingOverlay.IsVisible = true;
             LoadQuestion(); // Show next
             LoadingOverlay.IsVisible = false;
@@ -186,9 +232,14 @@ namespace Kviz
 
         private async void ShowResults()
         {
-            double percentage = (double)correctCount / 10 * 100;
-            await DisplayAlert("Quiz Finished", $"Your score: {percentage:F1}%", "OK");
-            await Navigation.PopAsync(); // Return to main page
+            double percentage = (double)correctCount / questions.Count * 100;
+
+            await DisplayAlert("Quiz Finished",
+                $"Correct answers: {correctCount}/{questions.Count}\n" +
+                $"Final Score (with time bonus): {score}",
+                "OK");
+
+            await Navigation.PopAsync(); // Go back to main page
         }
 
         private readonly ApiService _apiService = new ApiService();

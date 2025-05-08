@@ -40,7 +40,11 @@
                 <Button x:Name="OptionC" Text="OptionC" Clicked="OnAnswerClicked" />
                 <Button x:Name="OptionD" Text="OptionD" Clicked="OnAnswerClicked" />
             </VerticalStackLayout>
-
+            <Label x:Name="ScoreLabel"
+       Text="Score: 0"
+       FontSize="18"
+       HorizontalOptions="Center"
+       Padding="10"/>
         </VerticalStackLayout>
 
         <!-- Loading overlay -->

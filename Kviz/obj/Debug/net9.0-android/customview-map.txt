@@ -31,6 +31,8 @@ external-cache-path;C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-a
 external-path;C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\lp\166\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\net9.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
 foreground;obj\Debug\net9.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
+item;C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\lp\160\jl\res\values\values.xml
+item;C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\lp\164\jl\res\values\values.xml
 item;C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\lp\165\jl\res\drawable\maui_splash.xml
 item;C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\lp\165\jl\res\values\styles.xml
 item;C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\lp\165\jl\res\values-v35\styles.xml
@@ -44,6 +46,7 @@ microsoft.maui.controls.platform.compatibility.ShellFlyoutLayout;C:\Users\Uporab
 monochrome;obj\Debug\net9.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
 monochrome;obj\Debug\net9.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
 paths;C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\lp\166\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
+resources;C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\lp\160\jl\res\values\values.xml
 resources;C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\lp\163\jl\res\values\strings.xml
 resources;C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\lp\164\jl\res\values\values.xml
 resources;C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\lp\165\jl\res\values\attr.xml

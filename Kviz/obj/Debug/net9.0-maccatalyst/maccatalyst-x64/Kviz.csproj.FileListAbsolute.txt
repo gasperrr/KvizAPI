@@ -247,6 +247,7 @@ C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccataly
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-nativeaot.a
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.a
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.dylib
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.csproj.AssemblyReference.cache
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauifont.inputs
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
@@ -286,7 +287,6 @@ C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccataly
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\coremlc\_BundleResourceWithLogicalName.items
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\_ProcessedBundleResourcesPath.items
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\_ProcessedContentPath.items
-C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.csproj.AssemblyReference.cache
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.AssemblyInfoInputs.cache
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.AssemblyInfo.cs
@@ -299,3 +299,6 @@ C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccataly
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.pdb
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.genruntimeconfig.cache
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\ref\Kviz.dll
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
