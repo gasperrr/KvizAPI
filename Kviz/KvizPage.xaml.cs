@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using Kviz.Models;
 using Kviz.Services;
+//using System.Net.Http.Json;
 
 namespace Kviz
 {
@@ -21,32 +22,41 @@ namespace Kviz
         public KvizPage()
         {
             InitializeComponent();
-            LoadQuestions();
+            
+        }
+        
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            LoadingOverlay.IsVisible = true;
+            await LoadQuestions();  // Fetch the questions when the page appears
+            LoadingOverlay.IsVisible = false;
             ShuffleAndTrimQuestions();
             LoadQuestion(); // First question
             StartTimer();
         }
 
-        // Load and parse the embedded JSON file
-        //private void LoadQuestions()
-        //{
-        //    var assembly = typeof(KvizPage).Assembly;
-
-        //    using Stream stream = assembly.GetManifestResourceStream("Kviz.Resources.Raw.questions.txt");
-        //    using StreamReader reader = new StreamReader(stream);
-        //    string fileContent = reader.ReadToEnd();
-
-        //    questions = JsonConvert.DeserializeObject<List<Question>>(fileContent);
-        //}
-
-        private async void LoadQuestions()
+        private async Task LoadQuestions()
         {
+
             try
             {
-                using (HttpClient client = new HttpClient())
+
+                HttpClientHandler handler = new HttpClientHandler();
+                handler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true;
+
+                using (HttpClient client = new HttpClient(handler))
                 {
-                    var response = await client.GetStringAsync("https://localhost:7169/api/questions");
+                    client.Timeout = new TimeSpan(0, 1, 0);
+                    System.Diagnostics.Debug.WriteLine("Requesting API...");
+                    
+                    var response = await client.GetStringAsync("https://10.0.2.2:7169/api/questions");
+                    System.Diagnostics.Debug.WriteLine("Response received!");
+
+                    Console.WriteLine(response); // Or use Debug.WriteLine or display in alert
                     questions = JsonConvert.DeserializeObject<List<Question>>(response);
+
 
                     if (questions == null || questions.Count == 0)
                     {
@@ -56,13 +66,18 @@ namespace Kviz
 
                     // Reset counters and load the first question
                     questionCount = 0;
-                    correctCount = 0;
-                    LoadQuestion(); // Load the first question
+                    correctCount = 0; // Load the first question
                 }
+            }
+            catch (HttpRequestException httpEx)
+            {
+                // Handle HTTP specific issues
+                await DisplayAlert("Error", $"Network error: {httpEx.Message}", "OK");
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Error", $"Failed to load questions: {ex.Message}", "OK");
+                // Handle any other exceptions
+                await DisplayAlert("Error", $"Unexpected error: {ex.Message}", "OK");
             }
         }
 
@@ -162,7 +177,9 @@ namespace Kviz
 
 
             questionCount++;
+            LoadingOverlay.IsVisible = true;
             LoadQuestion(); // Show next
+            LoadingOverlay.IsVisible = false;
 
             quizTimer.Start(); // Optional: resume
         }

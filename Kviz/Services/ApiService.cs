@@ -13,12 +13,12 @@ namespace Kviz.Services
         public ApiService()
         {
             _httpClient = new HttpClient();
-            _httpClient.BaseAddress = new Uri("https://localhost:7169"); // Replace with your actual API URL
+            _httpClient.BaseAddress = new Uri("https://192.168.1.8:7169"); // Replace with your actual API URL
         }
 
         public async Task<List<Question>> GetQuestionsAsync()
         {
-            return await _httpClient.GetFromJsonAsync<List<Question>>("api/questions/questions");
+            return await _httpClient.GetFromJsonAsync<List<Question>>("api/questions");
         }
     }
 }

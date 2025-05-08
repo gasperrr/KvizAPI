@@ -15,6 +15,7 @@ C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccataly
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.dll
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Essentials.dll
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Graphics.dll
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Newtonsoft.Json.dll
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ar\Microsoft.Maui.Controls.resources.dll
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ca\Microsoft.Maui.Controls.resources.dll
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\cs\Microsoft.Maui.Controls.resources.dll
@@ -290,6 +291,7 @@ C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccataly
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.AssemblyInfoInputs.cache
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.AssemblyInfo.cs
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.csproj.CoreCompileInputs.cache
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.sourcelink.json
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\XamlC.stamp
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.csproj.Up2Date
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.dll
@@ -297,5 +299,3 @@ C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccataly
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.pdb
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.genruntimeconfig.cache
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\ref\Kviz.dll
-C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Kviz.sourcelink.json
-C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Newtonsoft.Json.dll
