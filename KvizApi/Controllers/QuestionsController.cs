@@ -1,6 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+//using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.IO;
+using System.Threading.Tasks;
 using KvizApi.Services; // adjust if your namespace differs
 using KvizApi.Models;
+using System.Text.Json;
 
 namespace KvizApi.Controllers
 {
@@ -16,14 +21,29 @@ namespace KvizApi.Controllers
             _questionService = questionService;
         }
 
-        // GET api/quiz/questions
         [HttpGet()]
-        public ActionResult<IEnumerable<Question>> GetAllQuestions()
+        public async Task<ActionResult<IEnumerable<Question>>> GetAllQuestions()
         {
-            // Fetch all questions from the service and return them
+            // Path to the questions.json file in the wwwroot folder
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Data", "questions.json");
 
-            Console.WriteLine("GetAllQuestions endpoint was hit.");
-            var questions = _questionService.GetAllQuestions();
+            if (!System.IO.File.Exists(filePath))
+            {
+                return NotFound("Questions file not found.");
+            }
+
+            // Read the content of the file
+            var jsonData = await System.IO.File.ReadAllTextAsync(filePath);
+
+            // Deserialize the JSON data into a list of Question objects
+            //var questions = JsonConvert.DeserializeObject<List<Question>>(jsonData);
+            var questions = JsonSerializer.Deserialize<List<Question>>(jsonData);
+
+            if (questions == null || questions.Count == 0)
+            {
+                return NotFound("No questions available.");
+            }
+
             return Ok(questions);
         }
 

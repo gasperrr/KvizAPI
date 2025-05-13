@@ -1,0 +1,492 @@
+[
+  {
+    "Id": 1,
+    "QuestionText": "",
+    "ImagePath": "images/1.jpg",
+    "Options": [],
+    "CorrectAnswer": "ZGRADBA"
+  },
+  {
+    "Id": 2,
+    "QuestionText": "",
+    "ImagePath": "images/2.jpg",
+    "Options": [],
+    "CorrectAnswer": "STAN/KOLIBA"
+  },
+  {
+    "Id": 3,
+    "QuestionText": "",
+    "ImagePath": "images/3.jpg",
+    "Options": [],
+    "CorrectAnswer": "CERKEV Z ENIM ZVONIKOM"
+  },
+  {
+    "Id": 4,
+    "QuestionText": "",
+    "ImagePath": "images/4.jpg",
+    "Options": [],
+    "CorrectAnswer": "KAPELA"
+  },
+  {
+    "Id": 5,
+    "QuestionText": "",
+    "ImagePath": "images/5.jpg",
+    "Options": [],
+    "CorrectAnswer": "GRAD"
+  },
+  {
+    "Id": 6,
+    "QuestionText": "",
+    "ImagePath": "images/6.jpg",
+    "Options": [],
+    "CorrectAnswer": "DALJNOVOD"
+  },
+  {
+    "Id": 7,
+    "QuestionText": "",
+    "ImagePath": "images/7.jpg",
+    "Options": [],
+    "CorrectAnswer": "SLABŠI KOLOVOZ"
+  },
+  {
+    "Id": 8,
+    "QuestionText": "",
+    "ImagePath": "images/8.jpg",
+    "Options": [],
+    "CorrectAnswer": "OSNOVNA PLASTNICA (IZOHIPSA)"
+  },
+  {
+    "Id": 9,
+    "QuestionText": "",
+    "ImagePath": "images/9.jpg",
+    "Options": [],
+    "CorrectAnswer": "KOZOLEC"
+  },
+  {
+    "Id": 10,
+    "QuestionText": "",
+    "ImagePath": "images/10.jpg",
+    "Options": [],
+    "CorrectAnswer": "KOLOVOZ"
+  },
+  {
+    "Id": 11,
+    "QuestionText": "",
+    "ImagePath": "images/11.jpg",
+    "Options": [],
+    "CorrectAnswer": "OZKA STEZA, PEŠPOT"
+  },
+  {
+    "Id": 12,
+    "QuestionText": "",
+    "ImagePath": "images/12.jpg",
+    "Options": [],
+    "CorrectAnswer": "UTRJENA CESTA"
+  },
+  {
+    "Id": 13,
+    "QuestionText": "",
+    "ImagePath": "images/13.jpg",
+    "Options": [],
+    "CorrectAnswer": "VRTAČA"
+  },
+  {
+    "Id": 14,
+    "QuestionText": "",
+    "ImagePath": "images/14.jpg",
+    "Options": [],
+    "CorrectAnswer": "POTOK OBČASNO BREZ VODE, HUDOURNIK"
+  },
+  {
+    "Id": 15,
+    "QuestionText": "",
+    "ImagePath": "images/15.jpg",
+    "Options": [],
+    "CorrectAnswer": "GOZD"
+  },
+  {
+    "Id": 16,
+    "QuestionText": "",
+    "ImagePath": "images/16.jpg",
+    "Options": [],
+    "CorrectAnswer": "BARAKA"
+  },
+  {
+    "Id": 17,
+    "QuestionText": "",
+    "ImagePath": "images/17.jpg",
+    "Options": [],
+    "CorrectAnswer": "CERKEV Z DVEMA ALI VEČ ZVONIKI"
+  },
+  {
+    "Id": 18,
+    "QuestionText": "",
+    "ImagePath": "images/18.jpg",
+    "Options": [],
+    "CorrectAnswer": "POKOPALIŠČE"
+  },
+  {
+    "Id": 19,
+    "QuestionText": "",
+    "ImagePath": "images/19.jpg",
+    "Options": [],
+    "CorrectAnswer": "KAMNOLOM"
+  },
+  {
+    "Id": 20,
+    "QuestionText": "",
+    "ImagePath": "images/20.jpg",
+    "Options": [],
+    "CorrectAnswer": "ŽIČNA OGRAJA"
+  },
+  {
+    "Id": 21,
+    "QuestionText": "",
+    "ImagePath": "images/21.jpg",
+    "Options": [],
+    "CorrectAnswer": "ENOTIRNA ŽELEZNIŠKA PROGA"
+  },
+  {
+    "Id": 22,
+    "QuestionText": "",
+    "ImagePath": "images/22.jpg",
+    "Options": [],
+    "CorrectAnswer": "SEDLO/PRELAZ"
+  },
+  {
+    "Id": 23,
+    "QuestionText": "",
+    "ImagePath": "images/23.jpg",
+    "Options": [],
+    "CorrectAnswer": "MOST"
+  },
+  {
+    "Id": 24,
+    "QuestionText": "",
+    "ImagePath": "images/24.jpg",
+    "Options": [],
+    "CorrectAnswer": "PODZEMNA JAMA BREZ VODE"
+  },
+  {
+    "Id": 25,
+    "QuestionText": "",
+    "ImagePath": "images/25.jpg",
+    "Options": [],
+    "CorrectAnswer": "KOTA"
+  },
+  {
+    "Id": 26,
+    "QuestionText": "",
+    "ImagePath": "images/26.jpg",
+    "Options": [],
+    "CorrectAnswer": "GLAVNA POUDARJENA PLASTNICA (IZOHIPSA)"
+  },
+  {
+    "Id": 27,
+    "QuestionText": "",
+    "ImagePath": "images/27.jpg",
+    "Options": [],
+    "CorrectAnswer": "REKA ALI POTOK OŽJA OD 5 M"
+  },
+  {
+    "Id": 28,
+    "QuestionText": "",
+    "ImagePath": "images/28.jpg",
+    "Options": [],
+    "CorrectAnswer": "JEZERO, MLAKA"
+  },
+  {
+    "Id": 29,
+    "QuestionText": "",
+    "ImagePath": "images/29.jpg",
+    "Options": [],
+    "CorrectAnswer": "MOČNEJŠI IZVIR"
+  },
+  {
+    "Id": 30,
+    "QuestionText": "",
+    "ImagePath": "images/30.jpg",
+    "Options": [],
+    "CorrectAnswer": "PREHODNO MOČVIRJE S TRSTIČJEM"
+  },
+  {
+    "Id": 31,
+    "QuestionText": "",
+    "ImagePath": "images/31.jpg",
+    "Options": [],
+    "CorrectAnswer": "TRANSFORMATOR"
+  },
+  {
+    "Id": 32,
+    "QuestionText": "",
+    "ImagePath": "images/32.jpg",
+    "Options": [],
+    "CorrectAnswer": "LIVADA, PAŠNIK"
+  },
+  {
+    "Id": 33,
+    "QuestionText": "",
+    "ImagePath": "images/33.jpg",
+    "Options": [],
+    "CorrectAnswer": "ANTENSKI STOLP"
+  },
+  {
+    "Id": 34,
+    "QuestionText": "",
+    "ImagePath": "images/34.jpg",
+    "Options": [],
+    "CorrectAnswer": "USEKI, ODKOPI IN IZKOPI NA ZEMLJIŠČU"
+  },
+  {
+    "Id": 35,
+    "QuestionText": "",
+    "ImagePath": "images/35.jpg",
+    "Options": [],
+    "CorrectAnswer": "REKA S ŠIRINO OD 5 DO 10 M"
+  },
+  {
+    "Id": 36,
+    "QuestionText": "",
+    "ImagePath": "images/36.jpg",
+    "Options": [],
+    "CorrectAnswer": "ŠIBKEJŠI IZVIR"
+  },
+  {
+    "Id": 37,
+    "QuestionText": "",
+    "ImagePath": "images/37.jpg",
+    "Options": [],
+    "CorrectAnswer": "ZBIRALNIK VODE, VODOHRAN"
+  },
+  {
+    "Id": 38,
+    "QuestionText": "",
+    "ImagePath": "images/38.jpg",
+    "Options": [],
+    "CorrectAnswer": "SIDRIŠČE"
+  },
+  {
+    "Id": 39,
+    "QuestionText": "",
+    "ImagePath": "images/39.jpg",
+    "Options": [],
+    "CorrectAnswer": "SKUPINA DREVES"
+  },
+  {
+    "Id": 40,
+    "QuestionText": "",
+    "ImagePath": "images/40.jpg",
+    "Options": [],
+    "CorrectAnswer": "VINOGRAD"
+  },
+  {
+    "Id": 41,
+    "QuestionText": "",
+    "ImagePath": "images/41.jpg",
+    "Options": [],
+    "CorrectAnswer": "ZIDANA ALI KAMNITA OGRAJA"
+  },
+  {
+    "Id": 42,
+    "QuestionText": "",
+    "ImagePath": "images/42.jpg",
+    "Options": [],
+    "CorrectAnswer": "TRIGONOMETRIČNA TOČKA Z NADMORSKO VIŠINO"
+  },
+  {
+    "Id": 43,
+    "QuestionText": "",
+    "ImagePath": "images/43.jpg",
+    "Options": [],
+    "CorrectAnswer": "SAMOSTAN"
+  },
+  {
+    "Id": 44,
+    "QuestionText": "",
+    "ImagePath": "images/44.jpg",
+    "Options": [],
+    "CorrectAnswer": "VODNJAK"
+  },
+  {
+    "Id": 45,
+    "QuestionText": "",
+    "ImagePath": "images/45.jpg",
+    "Options": [],
+    "CorrectAnswer": "CESTA V USEKU"
+  },
+  {
+    "Id": 46,
+    "QuestionText": "",
+    "ImagePath": "images/46.jpg",
+    "Options": [],
+    "CorrectAnswer": "OSAMLJEN GROB"
+  },
+  {
+    "Id": 47,
+    "QuestionText": "",
+    "ImagePath": "images/47.jpg",
+    "Options": [],
+    "CorrectAnswer": "STADION ALI ŠPORTNO IGRIŠČE"
+  },
+  {
+    "Id": 48,
+    "QuestionText": "",
+    "ImagePath": "images/48.jpg",
+    "Options": [],
+    "CorrectAnswer": "HIDROELEKTRARNA"
+  },
+  {
+    "Id": 49,
+    "QuestionText": "",
+    "ImagePath": "images/49.jpg",
+    "Options": [],
+    "CorrectAnswer": "ENOTIRNA ELEKTRIFICIRANA ŽELEZNIŠKA PROGA"
+  },
+  {
+    "Id": 50,
+    "QuestionText": "",
+    "ImagePath": "images/50.jpg",
+    "Options": [],
+    "CorrectAnswer": "PODPORNI ZID"
+  },
+  {
+    "Id": 51,
+    "QuestionText": "",
+    "ImagePath": "images/51.jpg",
+    "Options": [],
+    "CorrectAnswer": "ŽIČNICA, VZPENJAČA"
+  },
+  {
+    "Id": 52,
+    "QuestionText": "",
+    "ImagePath": "images/52.jpg",
+    "Options": [],
+    "CorrectAnswer": "PADNICE NA PLASTNICI"
+  },
+  {
+    "Id": 53,
+    "QuestionText": "",
+    "ImagePath": "images/53.jpg",
+    "Options": [],
+    "CorrectAnswer": "VODOVOD"
+  },
+  {
+    "Id": 54,
+    "QuestionText": "",
+    "ImagePath": "images/54.jpg",
+    "Options": [],
+    "CorrectAnswer": "AVTOCESTA"
+  },
+  {
+    "Id": 55,
+    "QuestionText": "",
+    "ImagePath": "images/55.jpg",
+    "Options": [],
+    "CorrectAnswer": "DVOTIRNA ŽELEZNIŠKA PROGA"
+  },
+  {
+    "Id": 56,
+    "QuestionText": "",
+    "ImagePath": "images/56.jpg",
+    "Options": [],
+    "CorrectAnswer": "RAZGLEDNI STOLP"
+  },
+  {
+    "Id": 57,
+    "QuestionText": "",
+    "ImagePath": "images/57.jpg",
+    "Options": [],
+    "CorrectAnswer": "VERSKO ZNAMENJE"
+  },
+  {
+    "Id": 58,
+    "QuestionText": "",
+    "ImagePath": "images/58.jpg",
+    "Options": [],
+    "CorrectAnswer": "OBČASNO POPLAVLJENO ZEMLJIŠČE"
+  },
+  {
+    "Id": 59,
+    "QuestionText": "",
+    "ImagePath": "images/59.jpg",
+    "Options": [],
+    "CorrectAnswer": "SPOMENIK"
+  },
+  {
+    "Id": 60,
+    "QuestionText": "",
+    "ImagePath": "images/60.jpg",
+    "Options": [],
+    "CorrectAnswer": "MLIN"
+  },
+  {
+    "Id": 61,
+    "QuestionText": "",
+    "ImagePath": "images/61.jpg",
+    "Options": [],
+    "CorrectAnswer": "SERPENTINE"
+  },
+  {
+    "Id": 62,
+    "QuestionText": "",
+    "ImagePath": "images/62.jpg",
+    "Options": [],
+    "CorrectAnswer": "SKUPINA ZGRADB"
+  },
+  {
+    "Id": 63,
+    "QuestionText": "",
+    "ImagePath": "images/63.jpg",
+    "Options": [],
+    "CorrectAnswer": "TOVARNIŠKA DVORANA, SKLADIŠČE, HANGER"
+  },
+  {
+    "Id": 64,
+    "QuestionText": "",
+    "ImagePath": "images/64.jpg",
+    "Options": [],
+    "CorrectAnswer": "REZERVOAR, ZBIRALNIK GORIVA"
+  },
+  {
+    "Id": 65,
+    "QuestionText": "",
+    "ImagePath": "images/65.jpg",
+    "Options": [],
+    "CorrectAnswer": "ŽELEZNIŠKA POSTAJA"
+  },
+  {
+    "Id": 66,
+    "QuestionText": "",
+    "ImagePath": "images/66.jpg",
+    "Options": [],
+    "CorrectAnswer": "KAMNITA TLA"
+  },
+  {
+    "Id": 67,
+    "QuestionText": "",
+    "ImagePath": "images/67.jpg",
+    "Options": [],
+    "CorrectAnswer": "OPUŠČEN RUDNIK"
+  },
+  {
+    "Id": 68,
+    "QuestionText": "",
+    "ImagePath": "images/68.jpg",
+    "Options": [],
+    "CorrectAnswer": "BRV"
+  },
+  {
+    "Id": 69,
+    "QuestionText": "",
+    "ImagePath": "images/69.jpg",
+    "Options": [],
+    "CorrectAnswer": "PODZEMNA JAMA Z VODO"
+  },
+  {
+    "Id": 70,
+    "QuestionText": "",
+    "ImagePath": "images/70.jpg",
+    "Options": [],
+    "CorrectAnswer": "MANJŠA JAMA, BREZNO"
+  }
+]

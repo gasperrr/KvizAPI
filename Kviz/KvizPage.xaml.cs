@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using Kviz.Models;
 using Kviz.Services;
+using System.Buffers.Text;
 //using System.Net.Http.Json;
 
 namespace Kviz
@@ -47,13 +48,16 @@ namespace Kviz
 
                 HttpClientHandler handler = new HttpClientHandler();
                 handler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true;
-
+#if DEBUG
+                string apiUrl = "https://10.0.2.2:7169/api/questions";
+#else
+        string apiUrl = "https://kvizapi.onrender.com/api/questions";
+#endif
                 using (HttpClient client = new HttpClient(handler))
                 {
                     client.Timeout = new TimeSpan(0, 1, 0);
                     System.Diagnostics.Debug.WriteLine("Requesting API...");
-
-                    var response = await client.GetStringAsync("https://10.0.2.2:7169/api/questions");
+                        var response = await client.GetStringAsync(apiUrl);
                     System.Diagnostics.Debug.WriteLine("Response received!");
 
                     Console.WriteLine(response); // Or use Debug.WriteLine or display in alert
@@ -123,8 +127,22 @@ namespace Kviz
 
             var question = questions[questionCount];
             var options = question.Options;
+#if DEBUG
+            string baseUrl = "https://10.0.2.2:7169";
+#else
+        string baseUrl  = "https://kvizapi.onrender.com";
+#endif
+            QuestionImage.Source = new UriImageSource
+            {
+                CachingEnabled = true,
+                CacheValidity = TimeSpan.FromDays(1)
+            };
 
-            QuestionLabel.Text = question.QuestionText;
+            string imageUrl = $"{baseUrl}/Images/{question.Id}.PNG";
+            System.Diagnostics.Debug.WriteLine(imageUrl);
+
+            QuestionImage.Source = ImageSource.FromUri(new Uri(imageUrl));
+            //QuestionLabel.Text = question.QuestionText;
             OptionA.Text = options[0];
             OptionB.Text = options[1];
             OptionC.Text = options[2];
@@ -222,7 +240,7 @@ namespace Kviz
             await Task.Delay(1000);
 
             questionCount++;
-           
+
             LoadingOverlay.IsVisible = true;
             LoadQuestion(); // Show next
             LoadingOverlay.IsVisible = false;

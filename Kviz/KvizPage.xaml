@@ -26,15 +26,16 @@
             </Grid>
 
             <!-- Question -->
-            <Label x:Name="QuestionLabel"
-                   Text="What is the capital of France?"
-                   FontSize="20"
-                   HorizontalOptions="Center"
-                   HorizontalTextAlignment="Center"
-                   Padding="10" />
+            <Image x:Name="QuestionImage"
+HeightRequest="300"
+WidthRequest="300"
+Aspect="AspectFill"
+HorizontalOptions="Center"
+VerticalOptions="Center"/>
 
             <!-- Answers -->
             <VerticalStackLayout Spacing="10">
+
                 <Button x:Name="OptionA" Text="OptionA" Clicked="OnAnswerClicked" />
                 <Button x:Name="OptionB" Text="OptionB" Clicked="OnAnswerClicked" />
                 <Button x:Name="OptionC" Text="OptionC" Clicked="OnAnswerClicked" />

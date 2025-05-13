@@ -46,6 +46,8 @@ if (app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
 }
 
+app.UseStaticFiles();
+
 app.UseCors("AllowAll"); //
 
 app.UseHttpsRedirection();

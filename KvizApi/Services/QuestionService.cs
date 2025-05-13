@@ -10,16 +10,16 @@ namespace KvizApi.Services
         {
             _questions = new List<Question>
             {
-                new Question { Id = 1, QuestionText = "What is the capital of France?", CorrectAnswer = "Paris" },
-                new Question { Id = 2, QuestionText = "Which planet is closest to the Sun?", CorrectAnswer = "Mercury" },
-                new Question { Id = 3, QuestionText = "What is the largest ocean on Earth?", CorrectAnswer = "Pacific" },
-                new Question { Id = 4, QuestionText = "Which country is known as the Land of the Rising Sun?", CorrectAnswer = "Japan" },
-                new Question { Id = 5, QuestionText = "What is the capital of Japan?", CorrectAnswer = "Tokyo" },
-                new Question { Id = 6, QuestionText = "What is the speed of light?", CorrectAnswer = "299,792 km/s" },
-                new Question { Id = 7, QuestionText = "What is the largest mammal?", CorrectAnswer = "Whale" },
-                new Question { Id = 8, QuestionText = "Who invented the telephone?", CorrectAnswer = "Alexander Graham Bell" },
-                new Question { Id = 9, QuestionText = "What is the tallest mountain on Earth?", CorrectAnswer = "Mount Everest" },
-                new Question { Id = 10, QuestionText = "Which is the largest planet in our solar system?", CorrectAnswer = "Jupiter" }
+                //new Question { Id = 1, QuestionText = "What is the capital of France?", CorrectAnswer = "Paris" },
+                //new Question { Id = 2, QuestionText = "Which planet is closest to the Sun?", CorrectAnswer = "Mercury" },
+                //new Question { Id = 3, QuestionText = "What is the largest ocean on Earth?", CorrectAnswer = "Pacific" },
+                //new Question { Id = 4, QuestionText = "Which country is known as the Land of the Rising Sun?", CorrectAnswer = "Japan" },
+                //new Question { Id = 5, QuestionText = "What is the capital of Japan?", CorrectAnswer = "Tokyo" },
+                //new Question { Id = 6, QuestionText = "What is the speed of light?", CorrectAnswer = "299,792 km/s" },
+                //new Question { Id = 7, QuestionText = "What is the largest mammal?", CorrectAnswer = "Whale" },
+                //new Question { Id = 8, QuestionText = "Who invented the telephone?", CorrectAnswer = "Alexander Graham Bell" },
+                //new Question { Id = 9, QuestionText = "What is the tallest mountain on Earth?", CorrectAnswer = "Mount Everest" },
+                //new Question { Id = 10, QuestionText = "Which is the largest planet in our solar system?", CorrectAnswer = "Jupiter" }
             };
 
             // Generate options for each question

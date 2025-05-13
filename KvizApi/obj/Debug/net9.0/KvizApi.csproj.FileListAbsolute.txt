@@ -33,3 +33,5 @@ C:\Users\Uporabnik\source\repos\Kviz\KvizApi\obj\Debug\net9.0\refint\KvizApi.dll
 C:\Users\Uporabnik\source\repos\Kviz\KvizApi\obj\Debug\net9.0\KvizApi.pdb
 C:\Users\Uporabnik\source\repos\Kviz\KvizApi\obj\Debug\net9.0\KvizApi.genruntimeconfig.cache
 C:\Users\Uporabnik\source\repos\Kviz\KvizApi\obj\Debug\net9.0\ref\KvizApi.dll
+C:\Users\Uporabnik\source\repos\Kviz\KvizApi\bin\Debug\net9.0\KvizApi.staticwebassets.runtime.json
+C:\Users\Uporabnik\source\repos\Kviz\KvizApi\obj\Debug\net9.0\compressed\3nbs8mxjib-8tmf8b1usk.gz
