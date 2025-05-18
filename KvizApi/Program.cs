@@ -1,21 +1,20 @@
 using KvizApi.Models;
-using KvizApi.Services;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 // Disable HTTPS in non-development environments
-if (builder.Environment.IsDevelopment())
-{
-    builder.WebHost.ConfigureKestrel(options =>
-    {
-        options.ListenAnyIP(5032); // HTTP
-        options.ListenAnyIP(7169, listenOptions =>
-        {
-            listenOptions.UseHttps(); // HTTPS
-        });
-    });
-}
-else
+//if (builder.Environment.IsDevelopment())
+//{
+//    builder.WebHost.ConfigureKestrel(options =>
+//    {
+//        options.ListenAnyIP(5032); // HTTP
+//        options.ListenAnyIP(7169, listenOptions =>
+//        {
+//            listenOptions.UseHttps(); // HTTPS
+//        });
+//    });
+//}
+//else
 {
     builder.WebHost.ConfigureKestrel(options =>
     {
@@ -33,8 +32,6 @@ builder.Services.AddCors(options =>
         policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
     });
 });
-
-builder.Services.AddSingleton<QuestionService>();
 
 var app = builder.Build();
 

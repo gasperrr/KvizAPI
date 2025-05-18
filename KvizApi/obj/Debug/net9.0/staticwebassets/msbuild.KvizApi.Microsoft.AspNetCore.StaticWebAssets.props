@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>8tmf8b1usk</Fingerprint>
-      <Integrity>xDrcKJRr15/ILmC/jgo/X23S/JUgB4b81ZFsrPPiI8w=</Integrity>
+      <Fingerprint>gjxblprn9a</Fingerprint>
+      <Integrity>dNhDbHdE+O6PI5uZc2EePOwCgZ4magW72ue/7+CM9e0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\questions.json'))</OriginalItemSpec>

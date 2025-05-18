@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7OcjEBYZEd7IFs88cUEXQ6MAVbGJmSbS5LBaJv+ZP7c=",
+  "Hash": "Vqh6Gv/KV0xRFkWvuGiXvIhbOWyvZK+0Wf4SiNn5OTk=",
   "Source": "KvizApi",
   "BasePath": "_content/KvizApi",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\3nbs8mxjib-8tmf8b1usk.gz",
+      "Identity": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\3nbs8mxjib-gjxblprn9a.gz",
       "SourceId": "KvizApi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/KvizApi",
-      "RelativePath": "Data/questions#[.{fingerprint=8tmf8b1usk}]?.json.gz",
+      "RelativePath": "Data/questions#[.{fingerprint=gjxblprn9a}]?.json.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -31,8 +31,8 @@
       "RelatedAsset": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\questions.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "rfkhfc6obz",
-      "Integrity": "Sf8bxdSqvqDcaHivTzmSbeS80q09iQ1Cve2oepH+I6s=",
+      "Fingerprint": "ygsyquj6e5",
+      "Integrity": "ogb4Pz1fFGkVKvUwaQx7M4YtxvScF6W8w2vgvd9gU1E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\questions.json"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8tmf8b1usk",
-      "Integrity": "xDrcKJRr15/ILmC/jgo/X23S/JUgB4b81ZFsrPPiI8w=",
+      "Fingerprint": "gjxblprn9a",
+      "Integrity": "dNhDbHdE+O6PI5uZc2EePOwCgZ4magW72ue/7+CM9e0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Data\\questions.json"
@@ -1531,13 +1531,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "Data/questions.8tmf8b1usk.json",
-      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\3nbs8mxjib-8tmf8b1usk.gz",
+      "Route": "Data/questions.gjxblprn9a.json",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\3nbs8mxjib-gjxblprn9a.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000744047619"
+          "Quality": "0.000629722922"
         }
       ],
       "ResponseHeaders": [
@@ -1547,15 +1547,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1343"
+          "Value": "1587"
         },
         {
           "Name": "ETag",
-          "Value": "\"Sf8bxdSqvqDcaHivTzmSbeS80q09iQ1Cve2oepH+I6s=\""
+          "Value": "\"ogb4Pz1fFGkVKvUwaQx7M4YtxvScF6W8w2vgvd9gU1E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 19:45:35 GMT"
+          "Value": "Sun, 18 May 2025 06:46:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1575,13 +1575,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"xDrcKJRr15/ILmC/jgo/X23S/JUgB4b81ZFsrPPiI8w=\""
+          "Value": "W/\"dNhDbHdE+O6PI5uZc2EePOwCgZ4magW72ue/7+CM9e0=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8tmf8b1usk"
+          "Value": "gjxblprn9a"
         },
         {
           "Name": "label",
@@ -1589,12 +1589,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-xDrcKJRr15/ILmC/jgo/X23S/JUgB4b81ZFsrPPiI8w="
+          "Value": "sha256-dNhDbHdE+O6PI5uZc2EePOwCgZ4magW72ue/7+CM9e0="
         }
       ]
     },
     {
-      "Route": "Data/questions.8tmf8b1usk.json",
+      "Route": "Data/questions.gjxblprn9a.json",
       "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\questions.json",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1604,7 +1604,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9852"
+          "Value": "12900"
         },
         {
           "Name": "Content-Type",
@@ -1612,11 +1612,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xDrcKJRr15/ILmC/jgo/X23S/JUgB4b81ZFsrPPiI8w=\""
+          "Value": "\"dNhDbHdE+O6PI5uZc2EePOwCgZ4magW72ue/7+CM9e0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 19:45:35 GMT"
+          "Value": "Sun, 18 May 2025 06:46:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1626,7 +1626,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8tmf8b1usk"
+          "Value": "gjxblprn9a"
         },
         {
           "Name": "label",
@@ -1634,13 +1634,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-xDrcKJRr15/ILmC/jgo/X23S/JUgB4b81ZFsrPPiI8w="
+          "Value": "sha256-dNhDbHdE+O6PI5uZc2EePOwCgZ4magW72ue/7+CM9e0="
         }
       ]
     },
     {
-      "Route": "Data/questions.8tmf8b1usk.json.gz",
-      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\3nbs8mxjib-8tmf8b1usk.gz",
+      "Route": "Data/questions.gjxblprn9a.json.gz",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\3nbs8mxjib-gjxblprn9a.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1649,7 +1649,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1343"
+          "Value": "1587"
         },
         {
           "Name": "Content-Type",
@@ -1657,11 +1657,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Sf8bxdSqvqDcaHivTzmSbeS80q09iQ1Cve2oepH+I6s=\""
+          "Value": "\"ogb4Pz1fFGkVKvUwaQx7M4YtxvScF6W8w2vgvd9gU1E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 19:45:35 GMT"
+          "Value": "Sun, 18 May 2025 06:46:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1679,7 +1679,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8tmf8b1usk"
+          "Value": "gjxblprn9a"
         },
         {
           "Name": "label",
@@ -1687,18 +1687,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Sf8bxdSqvqDcaHivTzmSbeS80q09iQ1Cve2oepH+I6s="
+          "Value": "sha256-ogb4Pz1fFGkVKvUwaQx7M4YtxvScF6W8w2vgvd9gU1E="
         }
       ]
     },
     {
       "Route": "Data/questions.json",
-      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\3nbs8mxjib-8tmf8b1usk.gz",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\3nbs8mxjib-gjxblprn9a.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000744047619"
+          "Quality": "0.000629722922"
         }
       ],
       "ResponseHeaders": [
@@ -1708,15 +1708,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1343"
+          "Value": "1587"
         },
         {
           "Name": "ETag",
-          "Value": "\"Sf8bxdSqvqDcaHivTzmSbeS80q09iQ1Cve2oepH+I6s=\""
+          "Value": "\"ogb4Pz1fFGkVKvUwaQx7M4YtxvScF6W8w2vgvd9gU1E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 19:45:35 GMT"
+          "Value": "Sun, 18 May 2025 06:46:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1736,13 +1736,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"xDrcKJRr15/ILmC/jgo/X23S/JUgB4b81ZFsrPPiI8w=\""
+          "Value": "W/\"dNhDbHdE+O6PI5uZc2EePOwCgZ4magW72ue/7+CM9e0=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xDrcKJRr15/ILmC/jgo/X23S/JUgB4b81ZFsrPPiI8w="
+          "Value": "sha256-dNhDbHdE+O6PI5uZc2EePOwCgZ4magW72ue/7+CM9e0="
         }
       ]
     },
@@ -1757,7 +1757,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9852"
+          "Value": "12900"
         },
         {
           "Name": "Content-Type",
@@ -1765,11 +1765,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xDrcKJRr15/ILmC/jgo/X23S/JUgB4b81ZFsrPPiI8w=\""
+          "Value": "\"dNhDbHdE+O6PI5uZc2EePOwCgZ4magW72ue/7+CM9e0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 19:45:35 GMT"
+          "Value": "Sun, 18 May 2025 06:46:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1779,13 +1779,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xDrcKJRr15/ILmC/jgo/X23S/JUgB4b81ZFsrPPiI8w="
+          "Value": "sha256-dNhDbHdE+O6PI5uZc2EePOwCgZ4magW72ue/7+CM9e0="
         }
       ]
     },
     {
       "Route": "Data/questions.json.gz",
-      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\3nbs8mxjib-8tmf8b1usk.gz",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\3nbs8mxjib-gjxblprn9a.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1794,7 +1794,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1343"
+          "Value": "1587"
         },
         {
           "Name": "Content-Type",
@@ -1802,11 +1802,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Sf8bxdSqvqDcaHivTzmSbeS80q09iQ1Cve2oepH+I6s=\""
+          "Value": "\"ogb4Pz1fFGkVKvUwaQx7M4YtxvScF6W8w2vgvd9gU1E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 10 May 2025 19:45:35 GMT"
+          "Value": "Sun, 18 May 2025 06:46:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1824,7 +1824,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Sf8bxdSqvqDcaHivTzmSbeS80q09iQ1Cve2oepH+I6s="
+          "Value": "sha256-ogb4Pz1fFGkVKvUwaQx7M4YtxvScF6W8w2vgvd9gU1E="
         }
       ]
     },

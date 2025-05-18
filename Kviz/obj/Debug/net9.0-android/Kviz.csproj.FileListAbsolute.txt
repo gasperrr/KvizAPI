@@ -1358,6 +1358,10 @@ C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\lp\148\jl\fil
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\lp\157\jl\files.cache
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\lp\161\jl\files.cache
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\lp\162\jl\files.cache
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-android\Microsoft.Maui.Controls.HotReload.Forms.dll
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-android\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-android\Microsoft.VisualStudio.DesignTools.TapContract.dll
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\Kviz.csproj.Up2Date
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\android\typemaps.x86_64.ll
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\android\environment.x86_64.ll
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\android\compressed_assemblies.x86_64.ll
@@ -1367,7 +1371,12 @@ C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\android\compr
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\android\marshal_methods.x86_64.o
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\android\jni_remap.x86_64.o
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\app_shared_libraries\x86_64\libxamarin-app.so
-C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-android\Microsoft.Maui.Controls.HotReload.Forms.dll
-C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-android\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-android\Microsoft.VisualStudio.DesignTools.TapContract.dll
-C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\Kviz.csproj.Up2Date
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\android\typemaps.arm64-v8a.ll
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\android\environment.arm64-v8a.ll
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\android\compressed_assemblies.arm64-v8a.ll
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\android\typemaps.arm64-v8a.o
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\android\environment.arm64-v8a.o
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\android\compressed_assemblies.arm64-v8a.o
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\android\marshal_methods.arm64-v8a.o
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\android\jni_remap.arm64-v8a.o
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Debug\net9.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so

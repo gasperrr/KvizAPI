@@ -18,31 +18,5 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "KvizApi.Controllers.QuestionsController",
-    "Method": "GetQuestionById",
-    "RelativePath": "api/Questions/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "KvizApi.Models.Question",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
   }
 ]

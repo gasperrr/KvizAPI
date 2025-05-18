@@ -3,7 +3,6 @@ using Microsoft.Maui.Graphics;
 using Newtonsoft.Json;
 using System.Net.Http;
 using Kviz.Models;
-using Kviz.Services;
 using System.Buffers.Text;
 //using System.Net.Http.Json;
 
@@ -11,7 +10,7 @@ namespace Kviz
 {
     public partial class KvizPage : ContentPage
     {
-        private const double TotalTime = 20000; // 60 seconds
+        private const double TotalTime = 20000; 
         private double timeLeft = TotalTime;
         private System.Timers.Timer quizTimer;
 
@@ -48,16 +47,14 @@ namespace Kviz
 
                 HttpClientHandler handler = new HttpClientHandler();
                 handler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true;
-#if DEBUG
-                string apiUrl = "https://10.0.2.2:7169/api/questions";
-#else
-        string apiUrl = "https://kvizapi.onrender.com/api/questions";
-#endif
+
+                string apiUrl = "https://kvizapi.onrender.com/api/questions";
+
                 using (HttpClient client = new HttpClient(handler))
                 {
                     client.Timeout = new TimeSpan(0, 1, 0);
                     System.Diagnostics.Debug.WriteLine("Requesting API...");
-                        var response = await client.GetStringAsync(apiUrl);
+                    var response = await client.GetStringAsync(apiUrl);
                     System.Diagnostics.Debug.WriteLine("Response received!");
 
                     Console.WriteLine(response); // Or use Debug.WriteLine or display in alert
@@ -102,9 +99,10 @@ namespace Kviz
             {
                 // Select 3 random correct answers from *other* questions
                 var distractors = questions
-                    .Where(x => x.CorrectAnswer != q.CorrectAnswer)
+                    .Where(x => x.CorrectAnswer != q.CorrectAnswer && x.Tags != null && x.Tags.Any(tag => q.Tags.Contains(tag)))
                     .Select(x => x.CorrectAnswer)
                     .Distinct()
+                    .Where(ans => ans != q.CorrectAnswer)
                     .OrderBy(x => rnd.Next())
                     .Take(3)
                     .ToList();
@@ -129,6 +127,7 @@ namespace Kviz
             var options = question.Options;
 #if DEBUG
             string baseUrl = "https://10.0.2.2:7169";
+            baseUrl = "https://kvizapi.onrender.com";
 #else
         string baseUrl  = "https://kvizapi.onrender.com";
 #endif
@@ -260,6 +259,5 @@ namespace Kviz
             await Navigation.PopAsync(); // Go back to main page
         }
 
-        private readonly ApiService _apiService = new ApiService();
     }
 }

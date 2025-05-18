@@ -3,7 +3,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
-using KvizApi.Services; // adjust if your namespace differs
 using KvizApi.Models;
 using System.Text.Json;
 
@@ -13,14 +12,6 @@ namespace KvizApi.Controllers
     [ApiController]
     public class QuestionsController : ControllerBase
     {
-        private readonly QuestionService _questionService;
-
-        // Constructor that takes the QuestionService
-        public QuestionsController(QuestionService questionService)
-        {
-            _questionService = questionService;
-        }
-
         [HttpGet()]
         public async Task<ActionResult<IEnumerable<Question>>> GetAllQuestions()
         {
@@ -47,17 +38,5 @@ namespace KvizApi.Controllers
             return Ok(questions);
         }
 
-        // GET api/quiz/questions/{id}
-        [HttpGet("{id}")]
-        public ActionResult<Question> GetQuestionById(int id)
-        {
-            // Fetch a single question by ID
-            var question = _questionService.GetQuestionById(id);
-            if (question == null)
-            {
-                return NotFound();
-            }
-            return Ok(question);
-        }
     }
 }

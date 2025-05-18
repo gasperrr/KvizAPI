@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/KvizApi/Data/questions.8tmf8b1usk.json">
+    <StaticWebAssetEndpoint Include="_content/KvizApi/Data/questions.gjxblprn9a.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\questions.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8tmf8b1usk"},{"Name":"integrity","Value":"sha256-xDrcKJRr15/ILmC/jgo/X23S/JUgB4b81ZFsrPPiI8w="},{"Name":"label","Value":"_content/KvizApi/Data/questions.json"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9852"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022xDrcKJRr15/ILmC/jgo/X23S/JUgB4b81ZFsrPPiI8w=\u0022"},{"Name":"Last-Modified","Value":"Sat, 10 May 2025 19:45:35 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gjxblprn9a"},{"Name":"integrity","Value":"sha256-dNhDbHdE\u002BO6PI5uZc2EePOwCgZ4magW72ue/7\u002BCM9e0="},{"Name":"label","Value":"_content/KvizApi/Data/questions.json"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12900"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022dNhDbHdE\u002BO6PI5uZc2EePOwCgZ4magW72ue/7\u002BCM9e0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 06:46:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KvizApi/Data/questions.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\questions.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xDrcKJRr15/ILmC/jgo/X23S/JUgB4b81ZFsrPPiI8w="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9852"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022xDrcKJRr15/ILmC/jgo/X23S/JUgB4b81ZFsrPPiI8w=\u0022"},{"Name":"Last-Modified","Value":"Sat, 10 May 2025 19:45:35 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-dNhDbHdE\u002BO6PI5uZc2EePOwCgZ4magW72ue/7\u002BCM9e0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12900"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022dNhDbHdE\u002BO6PI5uZc2EePOwCgZ4magW72ue/7\u002BCM9e0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 06:46:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KvizApi/Images/1.PNG">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\1.PNG'))</AssetFile>

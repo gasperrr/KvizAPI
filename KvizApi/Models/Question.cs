@@ -6,6 +6,7 @@
         public string QuestionText { get; set; }
         public string CorrectAnswer { get; set; }
         public List<string> Options { get; set; }
-        public string ImagePath { get; set; }     // Add this
+        public string ImagePath { get; set; }
+        public List<string> Tags { get; set; }
     }
 }
