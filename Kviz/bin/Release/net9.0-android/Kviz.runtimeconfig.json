@@ -13,7 +13,7 @@
     ],
     "configProperties": {
       "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability": false,
-      "System.ComponentModel.DefaultValueAttribute.IsSupported": false,
+      "System.ComponentModel.DefaultValueAttribute.IsSupported": true,
       "System.ComponentModel.Design.IDesignerHost.IsSupported": false,
       "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization": false,
       "System.ComponentModel.TypeDescriptor.IsComObjectDescriptorSupported": false,

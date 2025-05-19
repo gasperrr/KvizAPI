@@ -4,26 +4,32 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using Kviz.Models;
 using System.Buffers.Text;
+using CommunityToolkit.Maui.Views;
 //using System.Net.Http.Json;
 
 namespace Kviz
 {
     public partial class KvizPage : ContentPage
     {
-        private const double TotalTime = 20000; 
+        public int NumOfQuestions { get; set; }
+
+        private const double TotalTime = 20000;
         private double timeLeft = TotalTime;
         private System.Timers.Timer quizTimer;
+
 
         private int questionCount = 0;
         private int correctCount = 0;
         private List<Question> questions = new();
+        private List<Question> answers = new();
         private string correctAnswer;
 
         private int score = 0;
 
         public KvizPage()
         {
-            InitializeComponent();
+
+        InitializeComponent();
 
         }
 
@@ -36,7 +42,6 @@ namespace Kviz
             LoadingOverlay.IsVisible = false;
             ShuffleAndTrimQuestions();
             LoadQuestion(); // First question
-            StartTimer();
         }
 
         private async Task LoadQuestions()
@@ -91,25 +96,29 @@ namespace Kviz
         private void ShuffleAndTrimQuestions()
         {
             var rnd = new Random();
-
             // Shuffle questions and pick 10
+
+            System.Diagnostics.Debug.WriteLine($"Num of questions =  {NumOfQuestions}");
+            questions = questions.Take(NumOfQuestions).ToList();
+            answers = questions.OrderBy(q => rnd.Next()).ToList();
             questions = questions.OrderBy(q => rnd.Next()).Take(10).ToList();
 
             foreach (var q in questions)
             {
-                // Select 3 random correct answers from *other* questions
-                var distractors = questions
-                    .Where(x => x.CorrectAnswer != q.CorrectAnswer && x.Tags != null && x.Tags.Any(tag => q.Tags.Contains(tag)))
-                    .Select(x => x.CorrectAnswer)
-                    .Distinct()
-                    .Where(ans => ans != q.CorrectAnswer)
-                    .OrderBy(x => rnd.Next())
-                    .Take(3)
-                    .ToList();
+                var distractors = answers
+                        .Where(x => x.Id != q.Id && x.Tags != null && x.Tags.Any(tag => q.Tags.Contains(tag)))
+                        .Select(x => x.CorrectAnswer)
+                        .Distinct()
+                        .Where(ans => ans != q.CorrectAnswer)
+                        .OrderBy(x => rnd.Next())
+                        .Take(3)
+                        .ToList();
 
                 // Combine correct + distractors and shuffle
                 distractors.Add(q.CorrectAnswer);
                 q.Options = distractors.OrderBy(_ => rnd.Next()).ToList();
+
+                distractors.Clear();
             }
         }
 
@@ -125,12 +134,9 @@ namespace Kviz
 
             var question = questions[questionCount];
             var options = question.Options;
-#if DEBUG
-            string baseUrl = "https://10.0.2.2:7169";
-            baseUrl = "https://kvizapi.onrender.com";
-#else
-        string baseUrl  = "https://kvizapi.onrender.com";
-#endif
+
+            string baseUrl = "https://kvizapi.onrender.com";
+
             QuestionImage.Source = new UriImageSource
             {
                 CachingEnabled = true,
@@ -157,6 +163,8 @@ namespace Kviz
                 btn.IsEnabled = true;
             }
             timeLeft = TotalTime;
+
+            StartTimer();
         }
 
         private void StartTimer()
@@ -164,6 +172,10 @@ namespace Kviz
             quizTimer = new System.Timers.Timer(50); // 20 updates per second
             quizTimer.Elapsed += OnTimerElapsed;
             quizTimer.Start();
+        }
+        private void StopTimer()
+        {
+            quizTimer.Stop();
         }
 
         private void OnTimerElapsed(object sender, ElapsedEventArgs e)
@@ -188,6 +200,7 @@ namespace Kviz
                     DisplayAlert("Time's Up!", "You ran out of time.", "OK");
                     ShowResults();
                 }
+                
             });
         }
 
@@ -200,8 +213,10 @@ namespace Kviz
 
         private async void OnAnswerClicked(object sender, EventArgs e)
         {
+            StopTimer();
             var button = sender as Button;
             var selectedAnswer = button?.Text;
+            int timeBonus;
 
             // Disable all buttons to prevent double-tapping
             OptionA.IsEnabled = OptionB.IsEnabled = OptionC.IsEnabled = OptionD.IsEnabled = false;
@@ -227,14 +242,20 @@ namespace Kviz
             {
                 correctCount++;
 
-                // Calculate bonus: scale 15s to 10 pts
-                int timeBonus = (int)((timeLeft / 15000.0) * 10);
+                // Calculate bonus: scale 20s to 1000 pts
+                timeBonus = (int)((timeLeft / 20000.0) * 1000);
                 score += timeBonus;
             }
+            else
+                timeBonus = 0;
             // Show feedback immediately
-            string feedback = isCorrect ? "Correct!" : $"Wrong!\nCorrect answer: {correctAnswer}";
-            ScoreLabel.Text = $"Score: {score}";
-            await DisplayAlert("Result", feedback, "Next");
+            string feedback = isCorrect ? "Pravilno!" : "Napaèno";
+            ScoreLabel.Text = $"Tocke: {score}";
+
+            var Popup = new AnswerPopup(isCorrect, $"+ {timeBonus}");
+            await this.ShowPopupAsync(Popup);
+
+
             // Short delay so user sees color before moving on
             await Task.Delay(1000);
 
@@ -244,7 +265,6 @@ namespace Kviz
             LoadQuestion(); // Show next
             LoadingOverlay.IsVisible = false;
 
-            quizTimer.Start(); // Optional: resume
         }
 
         private async void ShowResults()

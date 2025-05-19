@@ -1,5 +1,7 @@
 obj\Release\net9.0-android\android-arm64\aot\_Microsoft.Android.Resource.Designer.dll.so
 obj\Release\net9.0-android\android-arm64\aot\Kviz.dll.so
+obj\Release\net9.0-android\android-arm64\aot\CommunityToolkit.Maui.dll.so
+obj\Release\net9.0-android\android-arm64\aot\CommunityToolkit.Maui.Core.dll.so
 obj\Release\net9.0-android\android-arm64\aot\Microsoft.Extensions.Configuration.dll.so
 obj\Release\net9.0-android\android-arm64\aot\Microsoft.Extensions.Configuration.Abstractions.dll.so
 obj\Release\net9.0-android\android-arm64\aot\Microsoft.Extensions.DependencyInjection.dll.so
@@ -45,6 +47,7 @@ obj\Release\net9.0-android\android-arm64\aot\Xamarin.KotlinX.Coroutines.Core.Jvm
 obj\Release\net9.0-android\android-arm64\aot\Xamarin.KotlinX.Serialization.Core.Jvm.dll.so
 obj\Release\net9.0-android\android-arm64\aot\Microsoft.CSharp.dll.so
 obj\Release\net9.0-android\android-arm64\aot\System.Collections.Concurrent.dll.so
+obj\Release\net9.0-android\android-arm64\aot\System.Collections.Immutable.dll.so
 obj\Release\net9.0-android\android-arm64\aot\System.Collections.NonGeneric.dll.so
 obj\Release\net9.0-android\android-arm64\aot\System.Collections.Specialized.dll.so
 obj\Release\net9.0-android\android-arm64\aot\System.Collections.dll.so
@@ -64,7 +67,6 @@ obj\Release\net9.0-android\android-arm64\aot\System.IO.Pipelines.dll.so
 obj\Release\net9.0-android\android-arm64\aot\System.Linq.Expressions.dll.so
 obj\Release\net9.0-android\android-arm64\aot\System.Linq.dll.so
 obj\Release\net9.0-android\android-arm64\aot\System.Memory.dll.so
-obj\Release\net9.0-android\android-arm64\aot\System.Net.Http.Json.dll.so
 obj\Release\net9.0-android\android-arm64\aot\System.Net.Http.dll.so
 obj\Release\net9.0-android\android-arm64\aot\System.Net.Primitives.dll.so
 obj\Release\net9.0-android\android-arm64\aot\System.Net.Requests.dll.so

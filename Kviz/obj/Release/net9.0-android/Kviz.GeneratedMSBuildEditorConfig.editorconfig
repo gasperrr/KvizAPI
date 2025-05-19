@@ -18,6 +18,18 @@ build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/Uporabnik/source/repos/Kviz/Kviz/AgeSelector.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kviz.AgeSelector.xaml
+build_metadata.AdditionalFiles.TargetPath = AgeSelector.xaml
+build_metadata.AdditionalFiles.RelativePath = AgeSelector.xaml
+
+[C:/Users/Uporabnik/source/repos/Kviz/Kviz/AnswerPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Kviz.AnswerPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = AnswerPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = AnswerPopup.xaml
+
 [C:/Users/Uporabnik/source/repos/Kviz/Kviz/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Kviz.App.xaml

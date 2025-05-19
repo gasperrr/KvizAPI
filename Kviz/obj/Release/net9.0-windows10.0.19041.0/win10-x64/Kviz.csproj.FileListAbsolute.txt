@@ -61,7 +61,6 @@ C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Release\net9.0-windows10.0.19041.0
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Release\net9.0-windows10.0.19041.0\win10-x64\dotnet_bot.scale-400.png
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Release\net9.0-windows10.0.19041.0\win10-x64\gzr_logo.scale-100.png
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Release\net9.0-windows10.0.19041.0\win10-x64\kviz.scale-100.png
-C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Release\net9.0-windows10.0.19041.0\win10-x64\runtimes\win-x64\native\WebView2Loader.dll
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Release\net9.0-windows10.0.19041.0\win10-x64\CoreMessagingXP.dll
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Release\net9.0-windows10.0.19041.0\win10-x64\dcompi.dll
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Release\net9.0-windows10.0.19041.0\win10-x64\dwmcorei.dll
@@ -475,3 +474,6 @@ C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Release\net9.0-windows10.0.19041.0
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Release\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Release\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\obj\Release\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Release\net9.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.dll
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Release\net9.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.Core.dll
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Release\net9.0-windows10.0.19041.0\win10-x64\System.Speech.dll

@@ -474,6 +474,9 @@ C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-windows10.0.19041.0\w
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Logging.Debug.dll
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Options.dll
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Primitives.dll
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.dll
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.Core.dll
+C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\System.Speech.dll
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
 C:\Users\Uporabnik\source\repos\Kviz\Kviz\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
