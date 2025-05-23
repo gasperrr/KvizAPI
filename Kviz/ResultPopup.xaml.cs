@@ -16,7 +16,7 @@ public partial class ResultPopup : Popup
 
     }
 
-    private async void OnCloseClicked(object sender, EventArgs e)
+    private void OnCloseClicked(object sender, EventArgs e)
     {
         Close();
     }

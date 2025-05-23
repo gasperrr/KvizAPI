@@ -8,7 +8,7 @@ using CommunityToolkit.Maui.Views;
 
 namespace Kviz
 {
-    public partial class KvizPage : ContentPage
+    public partial class TopografskiZnakiPage : ContentPage
     {
         public int Age { get; set; }
 
@@ -22,14 +22,15 @@ namespace Kviz
         private int correctCount = 0;
         private List<Question> questions = new();
         private List<Question> answers = new();
-        private string correctAnswer;
+        private string correctAnswer = string.Empty;
 
         private int score = 0;
 
-        public KvizPage()
+        public TopografskiZnakiPage()
         {
-
             InitializeComponent();
+
+            quizTimer = new System.Timers.Timer();
         }
 
         protected override async void OnAppearing()
@@ -52,7 +53,7 @@ namespace Kviz
                 HttpClientHandler handler = new HttpClientHandler();
                 handler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true;
 
-                string apiUrl = "https://kvizapi.onrender.com/api/questions";
+                string apiUrl = "https://kvizapi.onrender.com/api/TopografskiZnaki";
 
                 using (HttpClient client = new HttpClient(handler))
                 {
@@ -62,7 +63,7 @@ namespace Kviz
                     System.Diagnostics.Debug.WriteLine("Response received!");
 
                     Console.WriteLine(response); // Or use Debug.WriteLine or display in alert
-                    questions = JsonConvert.DeserializeObject<List<Question>>(response);
+                    questions = JsonConvert.DeserializeObject<List<Question>>(response) ?? new List<Question>();
 
 
                     if (questions == null || questions.Count == 0)
@@ -193,7 +194,7 @@ namespace Kviz
             quizTimer.Stop();
         }
 
-        private void OnTimerElapsed(object sender, ElapsedEventArgs e)
+        private void OnTimerElapsed(object? sender, ElapsedEventArgs e)
         {
             timeLeft -= (1000 / RefreshFrequency);
             if (questionCount >= questions.Count)  // Ensure this is the last question

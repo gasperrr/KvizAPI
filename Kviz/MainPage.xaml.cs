@@ -17,15 +17,15 @@ namespace Kviz
 
             if (result != null)
             {
-                var KvizPage = new KvizPage
+                var TopografskiZnakiPage = new TopografskiZnakiPage
                 {
                     Age = (int)result
                 };
 
-                await Navigation.PushAsync(KvizPage);
+                await Navigation.PushAsync(TopografskiZnakiPage);
             }
         }
-        private async void OnKrizankaTapped(object sender, EventArgs e)
+        private async void OnPoisciBesedeTapped(object sender, EventArgs e)
         {
 
             var Age_Select = new AgeSelector();
@@ -34,12 +34,12 @@ namespace Kviz
 
             if (result != null)
             {
-                var KrizankaPage = new KrizankaPage
+                var PoisciBesedePage = new PoisciBesedePage
                 {
                     Age = (int)result
                 };
 
-                await Navigation.PushAsync(KrizankaPage);
+                await Navigation.PushAsync(PoisciBesedePage);
             }
         }
 

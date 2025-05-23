@@ -21,7 +21,7 @@ namespace Kviz
             panGesture.PanUpdated += OnPanUpdated;
             GestureRecognizers.Add(panGesture);
         }
-        void OnPinchUpdated(object sender, PinchGestureUpdatedEventArgs e)
+        void OnPinchUpdated(object? sender, PinchGestureUpdatedEventArgs e)
         {
             if (e.Status == GestureStatus.Started)
             {
@@ -74,9 +74,7 @@ namespace Kviz
             }
         }
    
-        double panX, panY;
-
-        void OnPanUpdated(object sender, PanUpdatedEventArgs e)
+        void OnPanUpdated(object? sender, PanUpdatedEventArgs e)
         {
             switch (e.StatusType)
             {

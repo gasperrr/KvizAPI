@@ -76,7 +76,7 @@
                         <RoundRectangle CornerRadius="20"/>
                     </Border.StrokeShape>
 
-                    <Label Text="KRIZANKA"
+                    <Label Text="POISCI BESEDE"
                            HorizontalOptions="FillAndExpand"
                            LineBreakMode="WordWrap"
                            VerticalTextAlignment="Center"
@@ -85,7 +85,7 @@
                            FontAttributes="Bold"
                            TextColor="Black">
                         <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="OnKrizankaTapped" />
+                            <TapGestureRecognizer Tapped="OnPoisciBesedeTapped" />
                         </Label.GestureRecognizers>
                     </Label>
                 </Border>

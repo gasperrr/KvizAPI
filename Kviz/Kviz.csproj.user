@@ -17,10 +17,10 @@
     <MauiXaml Update="AnswerPopup.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="KrizankaPage.xaml">
+    <MauiXaml Update="PoisciBesede.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="KvizPage.xaml">
+    <MauiXaml Update="TopografskiZnaki.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="ResultPopup.xaml">

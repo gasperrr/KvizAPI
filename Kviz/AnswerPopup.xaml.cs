@@ -58,7 +58,7 @@ public partial class AnswerPopup : Popup
 
         await AnsPopup.TranslateTo(originalX, 0, 50);
     }
-    private async void OnCloseClicked(object sender, EventArgs e)
+    private void OnCloseClicked(object sender, EventArgs e)
     {
         Close();
     }

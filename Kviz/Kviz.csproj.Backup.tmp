@@ -78,10 +78,10 @@
 	  <MauiXaml Update="AnswerPopup.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="PoisciBesedePage.xaml">
+	  <MauiXaml Update="Poisci_BesedePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="TopografskiZnaki.xaml">
+	  <MauiXaml Update="TopografskiZnakiPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ResultPopup.xaml">
@@ -94,9 +94,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="TopografskiZnaki.xaml.cs">
-	    <DependentUpon>TopografskiZnaki.xaml</DependentUpon>
-	  </Compile>
 	  <Compile Update="PoisciBesede.xaml.cs">
 	    <DependentUpon>PoisciBesede.xaml</DependentUpon>
 	  </Compile>

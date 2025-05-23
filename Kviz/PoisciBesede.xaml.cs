@@ -7,7 +7,7 @@ using Microsoft.Maui.Controls.Shapes;
 
 namespace Kviz;
 
-public partial class KrizankaPage : ContentPage
+public partial class PoisciBesedePage : ContentPage
 {
     public int Age { get; set; }
     Dictionary<(int, int), Label> cellLabels = new();
@@ -15,16 +15,15 @@ public partial class KrizankaPage : ContentPage
     HashSet<string> foundWords = new();
 
     int GridSize = 25;
-    public char[,] grid;
+
+    public char[,] grid = new char[1,1];
+
     List<string> words = new() { "GASILEC", "POZAR", "CEV", "KRVAVITEV", "CELADA","POVELJNIK","NAPAD","ROCNIK" };
     Random rnd = new();
 
     int cellSize;
 
-    double currentScale = 1;
-    double startScale = 1;
-
-    public KrizankaPage()
+    public PoisciBesedePage()
     {
         InitializeComponent();
         
@@ -39,11 +38,13 @@ public partial class KrizankaPage : ContentPage
 
         this.SizeChanged += OnPageSizeChanged;
         base.OnAppearing();
-        Console.WriteLine($"KrizankaPage Age: {Age}");  // Should show 1
     }
 
-    private void OnPageSizeChanged(object sender, EventArgs e)
+    private void OnPageSizeChanged(object? sender, EventArgs e)
     {
+        if (ZoomPanContainer == null)
+            return;
+
         double sideLength = Math.Min(this.Width, this.Height);
 
         // Apply square size to ZoomPanContainer
@@ -201,7 +202,7 @@ public partial class KrizankaPage : ContentPage
 
     void OnCheckWordClicked(object sender, EventArgs e)
     {
-        string input = WordEntry.Text?.ToUpper().Trim();
+        string input = WordEntry.Text?.ToUpper().Trim() ?? string.Empty;
 
         if (string.IsNullOrWhiteSpace(input))
             return;

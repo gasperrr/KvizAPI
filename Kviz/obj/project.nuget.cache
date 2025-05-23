@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4ALJAujlPzg=",
+  "dgSpecHash": "A0mJdbaTP+c=",
   "success": true,
   "projectFilePath": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\Kviz\\Kviz.csproj",
   "expectedPackageFiles": [
@@ -124,11 +124,7 @@
     "C:\\Users\\Uporabnik\\.nuget\\packages\\xamarin.kotlinx.serialization.core\\1.7.3.2\\xamarin.kotlinx.serialization.core.1.7.3.2.nupkg.sha512",
     "C:\\Users\\Uporabnik\\.nuget\\packages\\xamarin.kotlinx.serialization.core.jvm\\1.7.3.2\\xamarin.kotlinx.serialization.core.jvm.1.7.3.2.nupkg.sha512",
     "C:\\Users\\Uporabnik\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.4\\microsoft.netcore.app.ref.9.0.4.nupkg.sha512",
-    "C:\\Users\\Uporabnik\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\9.0.1\\microsoft.netcore.app.crossgen2.win-x64.9.0.1.nupkg.sha512",
-    "C:\\Users\\Uporabnik\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512",
-    "C:\\Users\\Uporabnik\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\9.0.1\\microsoft.aspnetcore.app.runtime.win-x64.9.0.1.nupkg.sha512",
-    "C:\\Users\\Uporabnik\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\9.0.1\\microsoft.windowsdesktop.app.runtime.win-x64.9.0.1.nupkg.sha512",
-    "C:\\Users\\Uporabnik\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\9.0.1\\microsoft.netcore.app.runtime.win-x64.9.0.1.nupkg.sha512"
+    "C:\\Users\\Uporabnik\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
   ],
   "logs": []
 }
