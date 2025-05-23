@@ -8,9 +8,9 @@ using System.Text.Json;
 
 namespace KvizApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api")]
     [ApiController]
-    public class QuestionsController : ControllerBase
+    public class PoisciBesedeController : ControllerBase
     {
         [HttpGet("PoisciBesede")]
         public async Task<ActionResult<IEnumerable<string>>> GetCrosswordWords()

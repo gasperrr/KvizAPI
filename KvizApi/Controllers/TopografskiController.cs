@@ -8,7 +8,7 @@ using System.Text.Json;
 
 namespace KvizApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api")]
     [ApiController]
     public class TopografskiController : ControllerBase
     {
