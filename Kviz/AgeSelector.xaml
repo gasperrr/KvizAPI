@@ -19,9 +19,9 @@
 
         <VerticalStackLayout x:Name="Age_Selector" Spacing="35">
             <Label Text="Izberi kategorijo!" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Black" />
-            <Button Text="Pionir" Clicked="OnPionirClicked" HorizontalOptions="Center" TextColor="Green" WidthRequest="180" FontSize="30" FontAttributes="Bold"/>
-            <Button Text="Mladinec" Clicked="OnMladinecClicked" HorizontalOptions="Center" TextColor="Blue" WidthRequest="180" FontSize="30" FontAttributes="Bold"/>
-            <Button Text="Pripravnik" Clicked="OnPripravnikClicked" HorizontalOptions="Center" TextColor="Red" WidthRequest="180" FontSize="30" FontAttributes="Bold"/>
+            <Button Text="Pionir" Clicked="OnPionirClicked" HorizontalOptions="Center" TextColor="Green" WidthRequest="180" FontSize="30" FontAttributes="Bold" BackgroundColor="#ffa700"/>
+            <Button Text="Mladinec" Clicked="OnMladinecClicked" HorizontalOptions="Center" TextColor="Blue" WidthRequest="180" FontSize="30" FontAttributes="Bold" BackgroundColor="#ffa700"/>
+            <Button Text="Pripravnik" Clicked="OnPripravnikClicked" HorizontalOptions="Center" TextColor="Red" WidthRequest="180" FontSize="30" FontAttributes="Bold" BackgroundColor="#ffa700"/>
         </VerticalStackLayout>
 
     </Border>

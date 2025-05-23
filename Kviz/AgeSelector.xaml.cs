@@ -4,7 +4,7 @@ namespace Kviz;
 
 public partial class AgeSelector : Popup
 {
-    private int NumOfQuestions;
+    private int Age;
 
     public AgeSelector()
     {
@@ -14,18 +14,18 @@ public partial class AgeSelector : Popup
 
     private async void OnPionirClicked(object sender, EventArgs e)
     {
-        NumOfQuestions = 25;
-        Close(NumOfQuestions);
+        Age = 1;
+        Close(Age);
     }
     private async void OnMladinecClicked(object sender, EventArgs e)
     {
-        NumOfQuestions = 50;
-        Close(NumOfQuestions);
+        Age = 2;
+        Close(Age);
     }
     private async void OnPripravnikClicked(object sender, EventArgs e)
     {
-        NumOfQuestions = 70;
-        Close(NumOfQuestions);
+        Age = 3;
+        Close(Age);
     }
 
 }

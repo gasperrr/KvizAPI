@@ -17,7 +17,13 @@
     <MauiXaml Update="AnswerPopup.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="KrizankaPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="KvizPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="ResultPopup.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

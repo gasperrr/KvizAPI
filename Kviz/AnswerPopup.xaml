@@ -4,22 +4,31 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
     x:Class="Kviz.AnswerPopup"
+    Color="Transparent"
     >
 
     <Border
-        Stroke="LightGray"
-        StrokeThickness="1"
-        BackgroundColor="White"
+        StrokeShape="RoundRectangle 40"
+        StrokeThickness="6"
+        BackgroundColor="Wheat"
         Padding="20"
-        StrokeShape="RoundRectangle 20"
         HorizontalOptions="Center"
         VerticalOptions="Center"
         WidthRequest="300"
-        HeightRequest="200">
-
-        <VerticalStackLayout x:Name="AnsPopup" Spacing="15">
-            <Label x:Name="TitleLabel" Text="Result" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Black"/>
-            <Label x:Name="MessageLabel" Text="Your answer is correct!" HorizontalOptions="Center" TextColor="Black"/>
+        HeightRequest="200"
+        >
+        <Border.Stroke>
+            <LinearGradientBrush EndPoint="0,1">
+                <GradientStop Color="Orange"
+                  Offset="0.1" />
+                <GradientStop Color="Brown"
+                  Offset="1.0" />
+            </LinearGradientBrush>
+        </Border.Stroke>
+        
+        <VerticalStackLayout x:Name="AnsPopup" Spacing="5" >
+            <Label x:Name="TitleLabel" Text="Result" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Black"/>
+            <Label x:Name="MessageLabel" Text="Your answer is correct!" HorizontalOptions="Center" TextColor="Black" FontSize="20"/>
             <Button Text="Naprej" Clicked="OnCloseClicked" HorizontalOptions="Center" TextColor="Black"/>
         </VerticalStackLayout>
 

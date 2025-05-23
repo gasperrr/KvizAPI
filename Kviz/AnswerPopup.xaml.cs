@@ -19,6 +19,12 @@ public partial class AnswerPopup : Popup
             TitleLabel.TextColor = Colors.Red;
         }
         MessageLabel.Text = message;
+        if(message == "Zmanjkalo_casa")
+        {
+            TitleLabel.Text = "Zmanjkalo ti je èasa!";
+            TitleLabel.TextColor = Colors.Red;
+            MessageLabel.Text = "";
+        }
 
         _ = AnimateAfterShown(isCorrect);
     }

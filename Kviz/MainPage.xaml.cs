@@ -8,7 +8,7 @@ namespace Kviz
         {
             InitializeComponent();
         }
-        private async void OnKvizTapped(object sender, EventArgs e)
+        private async void OnTopografskiTapped(object sender, EventArgs e)
         {
 
             var Age_Select = new AgeSelector();
@@ -19,15 +19,28 @@ namespace Kviz
             {
                 var KvizPage = new KvizPage
                 {
-                    NumOfQuestions = (int)result
+                    Age = (int)result
                 };
 
                 await Navigation.PushAsync(KvizPage);
             }
-            //else
-            //{
-            //    result = 0;
-            //}
+        }
+        private async void OnKrizankaTapped(object sender, EventArgs e)
+        {
+
+            var Age_Select = new AgeSelector();
+
+            var result = await this.ShowPopupAsync(Age_Select);
+
+            if (result != null)
+            {
+                var KrizankaPage = new KrizankaPage
+                {
+                    Age = (int)result
+                };
+
+                await Navigation.PushAsync(KrizankaPage);
+            }
         }
 
     }

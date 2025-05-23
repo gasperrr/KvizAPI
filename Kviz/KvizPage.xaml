@@ -1,14 +1,40 @@
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Kviz.KvizPage"
-             Title="KvizPage">
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Kviz.KvizPage"
+    Shell.BackgroundColor="#d63600">
+    
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsEnabled="False" IsVisible="False" />
+    </Shell.BackButtonBehavior>
+
+    <Shell.TitleView>
+        <Grid>
+            <Label 
+                Text="TOPOGRAFSKI ZNAKI"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                FontSize="20"
+                FontAttributes="Bold" />
+        </Grid>
+    </Shell.TitleView>
 
     <Grid>
 
         <!-- Main quiz layout -->
-        <VerticalStackLayout Padding="20" Spacing="20">
+        <VerticalStackLayout Padding="20" Spacing="20"  BackgroundColor="#ffa700">
 
-            <!-- Timer Display -->
+            <Grid HeightRequest="30" BackgroundColor="Transparent" x:Name="VprasanjeContainer">
+                  <Label x:Name="VprasanjeText"
+                         Text=""
+                         FontSize="25"
+                         TextColor="Black"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         FontAttributes="Bold" />
+            </Grid>      
+            
+                <!-- Timer Display -->
             <Grid HeightRequest="30" BackgroundColor="#DDD" x:Name="TimerBarContainer">
                 <BoxView x:Name="TimerBar"
                          BackgroundColor="Green"
@@ -36,16 +62,19 @@ VerticalOptions="Center"/>
             <!-- Answers -->
             <VerticalStackLayout Spacing="10">
 
-                <Button x:Name="OptionA" Text="OptionA" Clicked="OnAnswerClicked" />
-                <Button x:Name="OptionB" Text="OptionB" Clicked="OnAnswerClicked" />
-                <Button x:Name="OptionC" Text="OptionC" Clicked="OnAnswerClicked" />
-                <Button x:Name="OptionD" Text="OptionD" Clicked="OnAnswerClicked" />
+                <Button x:Name="OptionA" Text="OptionA" Clicked="OnAnswerClicked" BackgroundColor="SlateBlue" FontSize="20" FontAttributes="Bold"/>
+                <Button x:Name="OptionB" Text="OptionB" Clicked="OnAnswerClicked" BackgroundColor="SlateBlue" FontSize="20" FontAttributes="Bold"/>
+                <Button x:Name="OptionC" Text="OptionC" Clicked="OnAnswerClicked" BackgroundColor="SlateBlue" FontSize="20" FontAttributes="Bold"/>
+                <Button x:Name="OptionD" Text="OptionD" Clicked="OnAnswerClicked" BackgroundColor="SlateBlue" FontSize="20" FontAttributes="Bold"/>
             </VerticalStackLayout>
             <Label x:Name="ScoreLabel"
-       Text="Score: 0"
-       FontSize="18"
+       Text="Rezultat: 0"
+       FontSize="40"
        HorizontalOptions="Center"
-       Padding="10"/>
+       Padding="15"
+                   FontAttributes="Bold"
+                   />
+
         </VerticalStackLayout>
 
         <!-- Loading overlay -->
@@ -62,7 +91,7 @@ VerticalOptions="Center"/>
                                VerticalOptions="Center"
                                WidthRequest="50"
                                HeightRequest="50" />
-            <Label Text="Loading..."
+            <Label Text="Nalaganje..."
                    TextColor="White"
                    FontAttributes="Bold"
                    FontSize="16"

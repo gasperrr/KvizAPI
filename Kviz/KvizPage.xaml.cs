@@ -5,18 +5,18 @@ using System.Net.Http;
 using Kviz.Models;
 using System.Buffers.Text;
 using CommunityToolkit.Maui.Views;
-//using System.Net.Http.Json;
 
 namespace Kviz
 {
     public partial class KvizPage : ContentPage
     {
-        public int NumOfQuestions { get; set; }
+        public int Age { get; set; }
 
         private const double TotalTime = 20000;
+        private double RefreshFrequency = 60;
         private double timeLeft = TotalTime;
         private System.Timers.Timer quizTimer;
-
+        private int NumOfQuestions;
 
         private int questionCount = 0;
         private int correctCount = 0;
@@ -29,8 +29,7 @@ namespace Kviz
         public KvizPage()
         {
 
-        InitializeComponent();
-
+            InitializeComponent();
         }
 
         protected override async void OnAppearing()
@@ -97,8 +96,18 @@ namespace Kviz
         {
             var rnd = new Random();
             // Shuffle questions and pick 10
-
-            System.Diagnostics.Debug.WriteLine($"Num of questions =  {NumOfQuestions}");
+            if (Age == 1)
+            {
+                NumOfQuestions = 25;
+            }
+            else if (Age == 2)
+            {
+                NumOfQuestions = 50;
+            }
+            else if(Age == 3)
+            {
+                NumOfQuestions = 70;
+            }
             questions = questions.Take(NumOfQuestions).ToList();
             answers = questions.OrderBy(q => rnd.Next()).ToList();
             questions = questions.OrderBy(q => rnd.Next()).Take(10).ToList();
@@ -124,7 +133,11 @@ namespace Kviz
 
         private void LoadQuestion()
         {
-            OptionA.IsEnabled = OptionB.IsEnabled = OptionC.IsEnabled = OptionD.IsEnabled = true;
+            if (questionCount < 10)
+                VprasanjeText.Text = $"Vprasanje - {questionCount + 1}/{questions.Count}";
+            else
+                VprasanjeText.Text = $"Vprasanje - {questionCount}/{questions.Count}";
+
             if (questionCount >= questions.Count)  // Ensure this is the last question
             {
                 ShowResults();
@@ -158,18 +171,20 @@ namespace Kviz
             // Reset button styles
             foreach (var btn in new[] { OptionA, OptionB, OptionC, OptionD })
             {
-                btn.BackgroundColor = Colors.Purple;
+                btn.BackgroundColor = Colors.SlateBlue;
                 btn.TextColor = Colors.Black;
                 btn.IsEnabled = true;
             }
             timeLeft = TotalTime;
 
             StartTimer();
+            // Disable all buttons to prevent double-tapping
+            OptionA.IsEnabled = OptionB.IsEnabled = OptionC.IsEnabled = OptionD.IsEnabled = true;
         }
 
         private void StartTimer()
         {
-            quizTimer = new System.Timers.Timer(50); // 20 updates per second
+            quizTimer = new System.Timers.Timer(1000 / RefreshFrequency); // updates per second
             quizTimer.Elapsed += OnTimerElapsed;
             quizTimer.Start();
         }
@@ -180,12 +195,12 @@ namespace Kviz
 
         private void OnTimerElapsed(object sender, ElapsedEventArgs e)
         {
-            timeLeft -= 50;
+            timeLeft -= (1000 / RefreshFrequency);
             if (questionCount >= questions.Count)  // Ensure this is the last question
             {
                 quizTimer.Stop();
             }
-            MainThread.BeginInvokeOnMainThread(() =>
+            MainThread.BeginInvokeOnMainThread(async () =>
             {
                 TimerText.Text = ((int)timeLeft / 1000).ToString();
                 double progress = timeLeft / TotalTime;
@@ -197,10 +212,20 @@ namespace Kviz
                     quizTimer.Stop();
                     TimerText.Text = "0";
                     TimerBar.WidthRequest = 0;
-                    DisplayAlert("Time's Up!", "You ran out of time.", "OK");
-                    ShowResults();
+                    
+                    var Popup = new AnswerPopup(false, "Zmanjkalo_casa");
+                    await this.ShowPopupAsync(Popup);
+                    if (questionCount < questions.Count)
+                    {
+                        questionCount++;
+                        LoadQuestion();
+                    }
+                    else
+                    {
+                        ShowResults();
+                    }
                 }
-                
+
             });
         }
 
@@ -252,6 +277,7 @@ namespace Kviz
             string feedback = isCorrect ? "Pravilno!" : "Napaèno";
             ScoreLabel.Text = $"Tocke: {score}";
 
+
             var Popup = new AnswerPopup(isCorrect, $"+ {timeBonus}");
             await this.ShowPopupAsync(Popup);
 
@@ -271,10 +297,8 @@ namespace Kviz
         {
             double percentage = (double)correctCount / questions.Count * 100;
 
-            await DisplayAlert("Quiz Finished",
-                $"Correct answers: {correctCount}/{questions.Count}\n" +
-                $"Final Score (with time bonus): {score}",
-                "OK");
+            var Popup = new ResultPopup(correctCount, questions.Count,score);
+            await this.ShowPopupAsync(Popup);
 
             await Navigation.PopAsync(); // Go back to main page
         }
