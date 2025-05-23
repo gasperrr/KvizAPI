@@ -1,13 +1,25 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/KvizApi/Data/questions.gjxblprn9a.json">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\questions.json'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/KvizApi/Data/PoisciBesede.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\PoisciBesede.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gjxblprn9a"},{"Name":"integrity","Value":"sha256-dNhDbHdE\u002BO6PI5uZc2EePOwCgZ4magW72ue/7\u002BCM9e0="},{"Name":"label","Value":"_content/KvizApi/Data/questions.json"}]]]></EndpointProperties>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8kYdPkuEkJbnw/P7\u002BPFlaGdaYJkZBXV0Kgqkt9aowys="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"166"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u00228kYdPkuEkJbnw/P7\u002BPFlaGdaYJkZBXV0Kgqkt9aowys=\u0022"},{"Name":"Last-Modified","Value":"Fri, 23 May 2025 14:29:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KvizApi/Data/PoisciBesede.uotb2rkuzb.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\PoisciBesede.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uotb2rkuzb"},{"Name":"integrity","Value":"sha256-8kYdPkuEkJbnw/P7\u002BPFlaGdaYJkZBXV0Kgqkt9aowys="},{"Name":"label","Value":"_content/KvizApi/Data/PoisciBesede.json"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"166"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u00228kYdPkuEkJbnw/P7\u002BPFlaGdaYJkZBXV0Kgqkt9aowys=\u0022"},{"Name":"Last-Modified","Value":"Fri, 23 May 2025 14:29:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KvizApi/Data/TopografskiZnaki.gjxblprn9a.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\TopografskiZnaki.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gjxblprn9a"},{"Name":"integrity","Value":"sha256-dNhDbHdE\u002BO6PI5uZc2EePOwCgZ4magW72ue/7\u002BCM9e0="},{"Name":"label","Value":"_content/KvizApi/Data/TopografskiZnaki.json"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12900"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022dNhDbHdE\u002BO6PI5uZc2EePOwCgZ4magW72ue/7\u002BCM9e0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 06:46:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KvizApi/Data/questions.json">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\questions.json'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/KvizApi/Data/TopografskiZnaki.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\TopografskiZnaki.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-dNhDbHdE\u002BO6PI5uZc2EePOwCgZ4magW72ue/7\u002BCM9e0="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12900"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022dNhDbHdE\u002BO6PI5uZc2EePOwCgZ4magW72ue/7\u002BCM9e0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 06:46:36 GMT"}]]]></ResponseHeaders>

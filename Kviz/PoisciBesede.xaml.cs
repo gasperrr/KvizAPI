@@ -103,16 +103,26 @@ public partial class PoisciBesedePage : ContentPage
             {
                 var label = new Label
                 {
+                    Padding = 0,
                     Text = grid[row, col].ToString(),
                     FontSize = 14,
-                    BackgroundColor = Colors.LightGray,
+                    BackgroundColor = Colors.Transparent,
                     HorizontalTextAlignment = TextAlignment.Center,
                     VerticalTextAlignment = TextAlignment.Center
                 };
+                var border = new Border
+                {
+                    Padding = 0,
+                    Margin = 0,
+                    Stroke = Colors.Black,
+                    StrokeThickness = 2,
+                    BackgroundColor = Colors.DarkGrey,
+                    Content = label
+                };
 
-                Grid.SetRow(label, row);
-                Grid.SetColumn(label, col);
-                PuzzleGrid.Children.Add(label);
+                Grid.SetRow(border, row);
+                Grid.SetColumn(border, col);
+                PuzzleGrid.Children.Add(border);
 
                 cellLabels[(row, col)] = label;
             }
@@ -154,20 +164,46 @@ public partial class PoisciBesedePage : ContentPage
             }
         }
     }
-
-    (int dx, int dy)[] directions = new (int, int)[]
+    readonly (int dx, int dy)[] directionsAge1 = new (int, int)[]
     {
-        (0, 1),  // right
-        (1, 0),  // down
-        (0, -1), // left
-        (-1, 0), // up
-        (1, 1),  // down-right
-        (-1, -1),// up-left
-        (1, -1), // down-left
-        (-1, 1), // up-right
+    (0, 1),   // right
+    (1, 0),   // down
+    (0, -1),  // left
+    (-1, 0),  // up
     };
 
-    (int dx, int dy) GetRandomDirection() => directions[rnd.Next(directions.Length)];
+    readonly (int dx, int dy)[] directionsAge2 = new (int, int)[]
+    {
+    (0, 1),    // right
+    (1, 0),    // down
+    (0, -1),   // left
+    (-1, 0),   // up
+    (1, 1),    // down-right
+    (-1, -1),  // up-left
+    };
+
+    readonly (int dx, int dy)[] directionsAge3 = new (int, int)[]
+    {
+    (0, 1),    // right
+    (1, 0),    // down
+    (0, -1),   // left
+    (-1, 0),   // up
+    (1, 1),    // down-right
+    (-1, -1),  // up-left
+    (1, -1),   // down-left
+    (-1, 1),   // up-right
+    };
+    (int dx, int dy) GetRandomDirection()
+    {
+        return Age switch
+        {
+            1 => directionsAge1[rnd.Next(directionsAge1.Length)],
+            2 => directionsAge2[rnd.Next(directionsAge2.Length)],
+            3 => directionsAge3[rnd.Next(directionsAge3.Length)],
+            _ => directionsAge1[0],
+        };
+    }
+   // (int dx, int dy) GetRandomDirection() => directions[rnd.Next(directions.Length)];
 
     bool CanPlaceWord(string word, int row, int col, (int dx, int dy) dir)
     {

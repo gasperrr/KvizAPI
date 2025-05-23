@@ -53,7 +53,7 @@ namespace Kviz
                 HttpClientHandler handler = new HttpClientHandler();
                 handler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true;
 
-                string apiUrl = "https://kvizapi.onrender.com/api/TopografskiZnaki";
+                string apiUrl = "https://kvizapi.onrender.com/api/Topografski/TopografskiZnaki";
 
                 using (HttpClient client = new HttpClient(handler))
                 {

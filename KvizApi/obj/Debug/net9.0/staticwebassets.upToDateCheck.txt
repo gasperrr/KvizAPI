@@ -1,5 +1,7 @@
-C:\Users\Uporabnik\source\repos\Kviz\KvizApi\wwwroot\Data\questions.json
-wwwroot\Data\questions.json
+C:\Users\Uporabnik\source\repos\Kviz\KvizApi\wwwroot\Data\TopografskiZnaki.json
+C:\Users\Uporabnik\source\repos\Kviz\KvizApi\wwwroot\Data\PoisciBesede.json
+wwwroot\Data\PoisciBesede.json
+wwwroot\Data\TopografskiZnaki.json
 wwwroot\Images\1.PNG
 wwwroot\Images\10.PNG
 wwwroot\Images\11.PNG

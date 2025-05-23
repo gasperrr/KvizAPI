@@ -10,13 +10,13 @@ namespace KvizApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class QuestionsController : ControllerBase
+    public class TopografskiController : ControllerBase
     {
-        [HttpGet()]
+        [HttpGet("TopografskiZnaki")]
         public async Task<ActionResult<IEnumerable<Question>>> GetAllQuestions()
         {
             // Path to the questions.json file in the wwwroot folder
-            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Data", "questions.json");
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Data", "TopografskiZnaki.json");
 
             if (!System.IO.File.Exists(filePath))
             {
@@ -37,6 +37,7 @@ namespace KvizApi.Controllers
 
             return Ok(questions);
         }
+
 
     }
 }

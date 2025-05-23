@@ -2,25 +2,13 @@ using KvizApi.Models;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 
 var builder = WebApplication.CreateBuilder(args);
-// Disable HTTPS in non-development environments
-//if (builder.Environment.IsDevelopment())
-//{
-//    builder.WebHost.ConfigureKestrel(options =>
-//    {
-//        options.ListenAnyIP(5032); // HTTP
-//        options.ListenAnyIP(7169, listenOptions =>
-//        {
-//            listenOptions.UseHttps(); // HTTPS
-//        });
-//    });
-//}
-//else
+
+
+builder.WebHost.ConfigureKestrel(options =>
 {
-    builder.WebHost.ConfigureKestrel(options =>
-    {
-        options.ListenAnyIP(80); // Only HTTP in production
-    });
-}
+    options.ListenAnyIP(80); // Only HTTP in production
+});
+
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddOpenApi(); // OpenAPI docs
@@ -45,7 +33,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseStaticFiles();
 
-app.UseCors("AllowAll"); //
+app.UseCors("AllowAll"); 
 
 app.UseHttpsRedirection();
 

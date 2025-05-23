@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Vqh6Gv/KV0xRFkWvuGiXvIhbOWyvZK+0Wf4SiNn5OTk=",
+  "Hash": "9nhvlBbtcima0OrGqH4kbLz52klFAHY8iabilVi8FhE=",
   "Source": "KvizApi",
   "BasePath": "_content/KvizApi",
   "Mode": "Default",
@@ -17,33 +17,75 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\3nbs8mxjib-gjxblprn9a.gz",
+      "Identity": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\6pdi7s2kgr-gjxblprn9a.gz",
       "SourceId": "KvizApi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/KvizApi",
-      "RelativePath": "Data/questions#[.{fingerprint=gjxblprn9a}]?.json.gz",
+      "RelativePath": "Data/TopografskiZnaki#[.{fingerprint=gjxblprn9a}]?.json.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\questions.json",
+      "RelatedAsset": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\TopografskiZnaki.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "ygsyquj6e5",
       "Integrity": "ogb4Pz1fFGkVKvUwaQx7M4YtxvScF6W8w2vgvd9gU1E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\questions.json"
+      "OriginalItemSpec": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\TopografskiZnaki.json"
     },
     {
-      "Identity": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\questions.json",
+      "Identity": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\rhb7a1q5an-uotb2rkuzb.gz",
+      "SourceId": "KvizApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/KvizApi",
+      "RelativePath": "Data/PoisciBesede#[.{fingerprint=uotb2rkuzb}]?.json.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\PoisciBesede.json",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "m98yxyc131",
+      "Integrity": "phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\PoisciBesede.json"
+    },
+    {
+      "Identity": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\PoisciBesede.json",
       "SourceId": "KvizApi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\",
       "BasePath": "_content/KvizApi",
-      "RelativePath": "Data/questions#[.{fingerprint}]?.json",
+      "RelativePath": "Data/PoisciBesede#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uotb2rkuzb",
+      "Integrity": "8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Data\\PoisciBesede.json"
+    },
+    {
+      "Identity": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\TopografskiZnaki.json",
+      "SourceId": "KvizApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\",
+      "BasePath": "_content/KvizApi",
+      "RelativePath": "Data/TopografskiZnaki#[.{fingerprint}]?.json",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -56,7 +98,7 @@
       "Integrity": "dNhDbHdE+O6PI5uZc2EePOwCgZ4magW72ue/7+CM9e0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Data\\questions.json"
+      "OriginalItemSpec": "wwwroot\\Data\\TopografskiZnaki.json"
     },
     {
       "Identity": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Images\\1.PNG",
@@ -1531,8 +1573,306 @@
   ],
   "Endpoints": [
     {
-      "Route": "Data/questions.gjxblprn9a.json",
-      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\3nbs8mxjib-gjxblprn9a.gz",
+      "Route": "Data/PoisciBesede.json",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\rhb7a1q5an-uotb2rkuzb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.008928571429"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:29:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys="
+        }
+      ]
+    },
+    {
+      "Route": "Data/PoisciBesede.json",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\PoisciBesede.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:29:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys="
+        }
+      ]
+    },
+    {
+      "Route": "Data/PoisciBesede.json.gz",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\rhb7a1q5an-uotb2rkuzb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:29:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s="
+        }
+      ]
+    },
+    {
+      "Route": "Data/PoisciBesede.uotb2rkuzb.json",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\rhb7a1q5an-uotb2rkuzb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.008928571429"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:29:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uotb2rkuzb"
+        },
+        {
+          "Name": "label",
+          "Value": "Data/PoisciBesede.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys="
+        }
+      ]
+    },
+    {
+      "Route": "Data/PoisciBesede.uotb2rkuzb.json",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\PoisciBesede.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:29:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uotb2rkuzb"
+        },
+        {
+          "Name": "label",
+          "Value": "Data/PoisciBesede.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys="
+        }
+      ]
+    },
+    {
+      "Route": "Data/PoisciBesede.uotb2rkuzb.json.gz",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\rhb7a1q5an-uotb2rkuzb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:29:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uotb2rkuzb"
+        },
+        {
+          "Name": "label",
+          "Value": "Data/PoisciBesede.json.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s="
+        }
+      ]
+    },
+    {
+      "Route": "Data/TopografskiZnaki.gjxblprn9a.json",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\6pdi7s2kgr-gjxblprn9a.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1585,7 +1925,7 @@
         },
         {
           "Name": "label",
-          "Value": "Data/questions.json"
+          "Value": "Data/TopografskiZnaki.json"
         },
         {
           "Name": "integrity",
@@ -1594,8 +1934,8 @@
       ]
     },
     {
-      "Route": "Data/questions.gjxblprn9a.json",
-      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\questions.json",
+      "Route": "Data/TopografskiZnaki.gjxblprn9a.json",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\TopografskiZnaki.json",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1630,7 +1970,7 @@
         },
         {
           "Name": "label",
-          "Value": "Data/questions.json"
+          "Value": "Data/TopografskiZnaki.json"
         },
         {
           "Name": "integrity",
@@ -1639,8 +1979,8 @@
       ]
     },
     {
-      "Route": "Data/questions.gjxblprn9a.json.gz",
-      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\3nbs8mxjib-gjxblprn9a.gz",
+      "Route": "Data/TopografskiZnaki.gjxblprn9a.json.gz",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\6pdi7s2kgr-gjxblprn9a.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1683,7 +2023,7 @@
         },
         {
           "Name": "label",
-          "Value": "Data/questions.json.gz"
+          "Value": "Data/TopografskiZnaki.json.gz"
         },
         {
           "Name": "integrity",
@@ -1692,8 +2032,8 @@
       ]
     },
     {
-      "Route": "Data/questions.json",
-      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\3nbs8mxjib-gjxblprn9a.gz",
+      "Route": "Data/TopografskiZnaki.json",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\6pdi7s2kgr-gjxblprn9a.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1747,8 +2087,8 @@
       ]
     },
     {
-      "Route": "Data/questions.json",
-      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\questions.json",
+      "Route": "Data/TopografskiZnaki.json",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\TopografskiZnaki.json",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1784,8 +2124,8 @@
       ]
     },
     {
-      "Route": "Data/questions.json.gz",
-      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\3nbs8mxjib-gjxblprn9a.gz",
+      "Route": "Data/TopografskiZnaki.json.gz",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\6pdi7s2kgr-gjxblprn9a.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {

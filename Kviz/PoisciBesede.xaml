@@ -43,13 +43,15 @@
                 BackgroundColor="#ffa700">
 
                 <Grid x:Name="PuzzleGrid" 
+                      RowSpacing="0"
+                      ColumnSpacing="0"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"/>
             </local:PinchContainer>
             
         </Grid>
 
-        <Grid Grid.Row="2" Padding="20">
+        <Grid Grid.Row="2" Padding="80">
             <Entry x:Name="WordEntry"
                    Placeholder="Vnesi besedo"
                    HorizontalOptions="Center"

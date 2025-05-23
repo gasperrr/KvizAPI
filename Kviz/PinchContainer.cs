@@ -71,9 +71,12 @@ namespace Kviz
                 // Store the translation delta's of the wrapped user interface element.
                 xOffset = Content.TranslationX;
                 yOffset = Content.TranslationY;
+
+                System.Diagnostics.Debug.WriteLine($"xOffsetPIN: {xOffset}");
+                System.Diagnostics.Debug.WriteLine($"yOffsetPIN: {yOffset}");
             }
         }
-   
+
         void OnPanUpdated(object? sender, PanUpdatedEventArgs e)
         {
             switch (e.StatusType)
@@ -82,8 +85,13 @@ namespace Kviz
                     // Translate and pan.
                     double boundsX = Content.Width;
                     double boundsY = Content.Height;
-                    Content.TranslationX = Math.Clamp(xOffset + e.TotalX, -boundsX, boundsX);
-                    Content.TranslationY = Math.Clamp(yOffset + e.TotalY, -boundsY, boundsY);
+
+                    System.Diagnostics.Debug.WriteLine($"boundsX: {boundsX}");
+                    System.Diagnostics.Debug.WriteLine($"boundsY: {boundsY}");
+                    Content.TranslationX = Math.Clamp(xOffset + e.TotalX, -boundsX * Content.Scale*0.9, boundsX * Content.Scale*0.9);
+                    Content.TranslationY = Math.Clamp(yOffset + e.TotalY, -boundsY * Content.Scale*0.9, boundsY * Content.Scale*0.9);
+                    System.Diagnostics.Debug.WriteLine($"Content.TranslationX: {Content.TranslationX}");
+                    System.Diagnostics.Debug.WriteLine($"Content.TranslationY: {Content.TranslationY}");
                     break;
 
                 case GestureStatus.Completed:
