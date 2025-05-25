@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kviz")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+31f849fefb8ae4ab8faa564248c5046f689921f7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+9fa0b746012ae4f0721c92aead4a28eabb381302")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kviz")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kviz")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

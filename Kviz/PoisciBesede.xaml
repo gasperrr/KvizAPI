@@ -21,37 +21,40 @@
     </Shell.TitleView>
     
     
-    <Grid BackgroundColor="#ffa700">
+    <Grid BackgroundColor="#ffa700" >
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Label x:Name="WordListLabel"
-               Grid.Row="0"
+        <Grid Grid.Row="0">
+            <Label x:Name="WordListLabel"
                Padding="10"
                FontSize="16"
-               TextColor="Transparent" />
+               TextColor="#ffa700" 
+               BackgroundColor="#ffa700"/>
+        </Grid>
 
-        <Grid Grid.Row="1" x:Name="ZoomPanContainer" >
+        <Grid Grid.Row="3" x:Name="ZoomPanContainer" IsClippedToBounds="True" BackgroundColor="#ffa700">
 
             <local:PinchContainer
                      HorizontalOptions="Center"
                      VerticalOptions="Center"
-                BackgroundColor="#ffa700">
+                     BackgroundColor="#ffa700">
 
                 <Grid x:Name="PuzzleGrid" 
                       RowSpacing="0"
                       ColumnSpacing="0"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"/>
+                
             </local:PinchContainer>
             
         </Grid>
 
-        <Grid Grid.Row="2" Padding="80">
+        <Grid Grid.Row="1" Padding="0" BackgroundColor="#ffa700">
             <Entry x:Name="WordEntry"
                    Placeholder="Vnesi besedo"
                    HorizontalOptions="Center"
@@ -63,7 +66,7 @@
                    FontAttributes="Bold"
                    HorizontalTextAlignment="Center"/>
         </Grid>
-        <Grid Grid.Row="3" Padding="20">
+        <Grid Grid.Row="2" Padding="20" BackgroundColor="#ffa700">
             <Button Text="Preveri"
                     CornerRadius="30"
                     Clicked="OnCheckWordClicked"

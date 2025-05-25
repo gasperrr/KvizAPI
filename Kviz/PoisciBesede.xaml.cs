@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using Microsoft.Maui.Controls.Shapes;
+using Newtonsoft.Json;
 
 namespace Kviz;
 
@@ -12,13 +13,13 @@ public partial class PoisciBesedePage : ContentPage
     public int Age { get; set; }
     Dictionary<(int, int), Label> cellLabels = new();
     Dictionary<string, List<(int row, int col)>> wordPositions = new();
-    HashSet<string> foundWords = new();
+    List<string> foundWords = new List<string> ();
 
     int GridSize = 25;
-
+    int FontSize = 10;
     public char[,] grid = new char[1,1];
 
-    List<string> words = new() { "GASILEC", "POZAR", "CEV", "KRVAVITEV", "CELADA","POVELJNIK","NAPAD","ROCNIK" };
+    List<string> allWords = new List<string>();
     Random rnd = new();
 
     int cellSize;
@@ -28,17 +29,71 @@ public partial class PoisciBesedePage : ContentPage
         InitializeComponent();
         
     }
-    protected override void OnAppearing()
+    protected override async void OnAppearing()
     {
+        base.OnAppearing();
         InitializeGrid();
+
+        await LoadWords();
+
         PlaceWords();
         FillEmptyCells();
         DrawGrid();
-        WordListLabel.Text = $"Find words: {string.Join(", ", words)}";
 
         this.SizeChanged += OnPageSizeChanged;
-        base.OnAppearing();
     }
+
+    private async Task LoadWords()
+    {
+        try
+        {
+            HttpClientHandler handler = new HttpClientHandler
+            {
+                ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
+            };
+
+            string apiUrl = "https://kvizapi.onrender.com/api/PoisciBesede";
+
+            using (HttpClient client = new HttpClient(handler))
+            {
+                client.Timeout = TimeSpan.FromMinutes(1);
+                System.Diagnostics.Debug.WriteLine("Requesting API...");
+                var response = await client.GetStringAsync(apiUrl);
+                System.Diagnostics.Debug.WriteLine("Response received!");
+
+                // Deserialize JSON as List<string> because your file is a list of words
+                allWords = JsonConvert.DeserializeObject<List<string>>(response) ?? new List<string>();
+
+                if (allWords == null || allWords.Count == 0)
+                {
+                    await DisplayAlert("Error", "No words returned from the API.", "OK");
+                    return;
+                }
+
+                // Pick 15 random words
+                var rnd = new Random();
+                var selectedWords = allWords.OrderBy(_ => rnd.Next()).Take(10).ToList();
+
+                // Example usage: print or populate your grid, etc.
+                foreach (var word in selectedWords)
+                {
+                    System.Diagnostics.Debug.WriteLine($"Selected word: {word}");
+                }
+
+                // Now you can use `selectedWords` to populate your crossword puzzle
+            }
+        }
+        catch (HttpRequestException httpEx)
+        {
+            await DisplayAlert("Error", $"Network error: {httpEx.Message}", "OK");
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error", $"Unexpected error: {ex.Message}", "OK");
+        }
+    }
+
+
 
     private void OnPageSizeChanged(object? sender, EventArgs e)
     {
@@ -47,16 +102,17 @@ public partial class PoisciBesedePage : ContentPage
 
         double sideLength = Math.Min(this.Width, this.Height);
 
-        // Apply square size to ZoomPanContainer
+        // Make the container square
         ZoomPanContainer.WidthRequest = sideLength;
         ZoomPanContainer.HeightRequest = sideLength;
-        // Apply clipping so the content doesn't go outside
+
+        // Clip the content so it doesn't overflow the square area
         ZoomPanContainer.Clip = new RectangleGeometry
         {
             Rect = new Rect(0, 0, sideLength, sideLength)
         };
-
-        // Unsubscribe so this runs only once
+        ZoomPanContainer.IsClippedToBounds = true;
+        // Unsubscribe to only apply this once
         this.SizeChanged -= OnPageSizeChanged;
     }
 
@@ -64,11 +120,11 @@ public partial class PoisciBesedePage : ContentPage
     {
         if (Age == 1)
         {
-            GridSize = 10;
+            GridSize = 25;
         }
         else if (Age == 2)
         {
-            GridSize = 17;
+            GridSize = 25;
         }
         else if (Age == 3)
         {
@@ -96,6 +152,9 @@ public partial class PoisciBesedePage : ContentPage
     {
         PuzzleGrid.Children.Clear();
         cellLabels.Clear();
+        var screenWidth = DeviceDisplay.MainDisplayInfo.Width / DeviceDisplay.MainDisplayInfo.Density;
+        cellSize = (int)screenWidth / GridSize;
+        FontSize = (int)(cellSize * 0.5);
 
         for (int row = 0; row < GridSize; row++)
         {
@@ -105,7 +164,7 @@ public partial class PoisciBesedePage : ContentPage
                 {
                     Padding = 0,
                     Text = grid[row, col].ToString(),
-                    FontSize = 14,
+                    FontSize = FontSize,
                     BackgroundColor = Colors.Transparent,
                     HorizontalTextAlignment = TextAlignment.Center,
                     VerticalTextAlignment = TextAlignment.Center
@@ -115,7 +174,7 @@ public partial class PoisciBesedePage : ContentPage
                     Padding = 0,
                     Margin = 0,
                     Stroke = Colors.Black,
-                    StrokeThickness = 2,
+                    StrokeThickness = 0.5,
                     BackgroundColor = Colors.DarkGrey,
                     Content = label
                 };
@@ -147,7 +206,7 @@ public partial class PoisciBesedePage : ContentPage
 
     void PlaceWords()
     {
-        foreach (var word in words)
+        foreach (var word in allWords)
         {
             bool placed = false;
             for (int attempts = 0; attempts < 100 && !placed; attempts++)
@@ -257,7 +316,6 @@ public partial class PoisciBesedePage : ContentPage
             }
 
             foundWords.Add(input);
-            WordListLabel.Text = $"Words: {string.Join(", ", words.Select(w => foundWords.Contains(w) ? $" {w}" : w))}";
         }
 
 
