@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/KvizApi/Data/PoisciBesede.duhu5ti68x.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\PoisciBesede.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"duhu5ti68x"},{"Name":"integrity","Value":"sha256-K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI="},{"Name":"label","Value":"_content/KvizApi/Data/PoisciBesede.json"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1737"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 25 May 2025 08:52:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KvizApi/Data/PoisciBesede.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\PoisciBesede.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8kYdPkuEkJbnw/P7\u002BPFlaGdaYJkZBXV0Kgqkt9aowys="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"166"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u00228kYdPkuEkJbnw/P7\u002BPFlaGdaYJkZBXV0Kgqkt9aowys=\u0022"},{"Name":"Last-Modified","Value":"Fri, 23 May 2025 14:29:31 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KvizApi/Data/PoisciBesede.uotb2rkuzb.json">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\PoisciBesede.json'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uotb2rkuzb"},{"Name":"integrity","Value":"sha256-8kYdPkuEkJbnw/P7\u002BPFlaGdaYJkZBXV0Kgqkt9aowys="},{"Name":"label","Value":"_content/KvizApi/Data/PoisciBesede.json"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"166"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u00228kYdPkuEkJbnw/P7\u002BPFlaGdaYJkZBXV0Kgqkt9aowys=\u0022"},{"Name":"Last-Modified","Value":"Fri, 23 May 2025 14:29:31 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1737"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 25 May 2025 08:52:32 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KvizApi/Data/TopografskiZnaki.gjxblprn9a.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\TopografskiZnaki.json'))</AssetFile>

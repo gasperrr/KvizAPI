@@ -42,6 +42,18 @@ namespace Kviz
                 await Navigation.PushAsync(PoisciBesedePage);
             }
         }
+        private async void OnMultiplayerTopografskiTapped(object sender, EventArgs e)
+        {
+
+
+
+            var MultiplayerLobbyPage = new MultiplayerLobbyPage();
+
+
+
+                await Navigation.PushAsync(MultiplayerLobbyPage);
+            
+        }
 
     }
 

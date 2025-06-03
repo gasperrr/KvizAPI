@@ -1,4 +1,5 @@
 using KvizApi.Models;
+using KvizApi.Services;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,8 @@ builder.WebHost.ConfigureKestrel(options =>
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddOpenApi(); // OpenAPI docs
+
+builder.Services.AddSingleton<MultiplayerTopografskiService>();
 
 builder.Services.AddCors(options =>
 {
@@ -30,7 +33,6 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
     app.UseDeveloperExceptionPage();
 }
-
 app.UseStaticFiles();
 
 app.UseCors("AllowAll"); 

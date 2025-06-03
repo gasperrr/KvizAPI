@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>uotb2rkuzb</Fingerprint>
-      <Integrity>8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys=</Integrity>
+      <Fingerprint>duhu5ti68x</Fingerprint>
+      <Integrity>K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Data\PoisciBesede.json'))</OriginalItemSpec>

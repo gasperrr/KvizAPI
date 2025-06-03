@@ -39,9 +39,9 @@ namespace Kviz
 
             LoadingOverlay.IsVisible = true;
             await LoadQuestions();  // Fetch the questions when the page appears
-            LoadingOverlay.IsVisible = false;
             ShuffleAndTrimQuestions();
-            LoadQuestion(); // First question
+            await LoadQuestion(); // First question
+            LoadingOverlay.IsVisible = false;
         }
 
         private async Task LoadQuestions()
@@ -132,7 +132,7 @@ namespace Kviz
             }
         }
 
-        private void LoadQuestion()
+        private async Task LoadQuestion()
         {
             if (questionCount < 10)
                 VprasanjeText.Text = $"Vprasanje - {questionCount + 1}/{questions.Count}";
@@ -181,6 +181,7 @@ namespace Kviz
             StartTimer();
             // Disable all buttons to prevent double-tapping
             OptionA.IsEnabled = OptionB.IsEnabled = OptionC.IsEnabled = OptionD.IsEnabled = true;
+            await Task.CompletedTask;
         }
 
         private void StartTimer()
@@ -219,7 +220,7 @@ namespace Kviz
                     if (questionCount < questions.Count)
                     {
                         questionCount++;
-                        LoadQuestion();
+                        await LoadQuestion();
                     }
                     else
                     {
@@ -289,7 +290,7 @@ namespace Kviz
             questionCount++;
 
             LoadingOverlay.IsVisible = true;
-            LoadQuestion(); // Show next
+            await LoadQuestion(); // Show next
             LoadingOverlay.IsVisible = false;
 
         }

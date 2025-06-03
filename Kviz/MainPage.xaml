@@ -89,7 +89,30 @@
                         </Label.GestureRecognizers>
                     </Label>
                 </Border>
+                <Border
+                         Stroke="LightGray"
+                         StrokeThickness="1"
+                         BackgroundColor="#ffa700"
+                         Padding="10"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="Center"> 
+                                    <Border.StrokeShape>
+                                     <RoundRectangle CornerRadius="20"/>
+                                    </Border.StrokeShape>
 
+                                     <Label Text="POISCI BESEDE MP"
+                        HorizontalOptions="FillAndExpand"
+                        LineBreakMode="WordWrap"
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+                        FontSize="40"
+                        FontAttributes="Bold"
+                        TextColor="Black">
+                                     <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMultiplayerTopografskiTapped" />
+                                     </Label.GestureRecognizers>
+                    </Label>
+                </Border>
             </VerticalStackLayout>
         </ScrollView>
 

@@ -3,13 +3,174 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
+      "Route": "Data/PoisciBesede.duhu5ti68x.json",
+      "AssetFile": "Data/PoisciBesede.json.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001564945227"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "638"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E9kvEjzFy9+mAcejnv2H3sOgfZ/Mq38HZG/aVVnpDoI=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 08:52:32 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "duhu5ti68x"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI="
+        },
+        {
+          "Name": "label",
+          "Value": "Data/PoisciBesede.json"
+        }
+      ]
+    },
+    {
+      "Route": "Data/PoisciBesede.duhu5ti68x.json",
+      "AssetFile": "Data/PoisciBesede.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1737"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 08:52:32 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "duhu5ti68x"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI="
+        },
+        {
+          "Name": "label",
+          "Value": "Data/PoisciBesede.json"
+        }
+      ]
+    },
+    {
+      "Route": "Data/PoisciBesede.duhu5ti68x.json.gz",
+      "AssetFile": "Data/PoisciBesede.json.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "638"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E9kvEjzFy9+mAcejnv2H3sOgfZ/Mq38HZG/aVVnpDoI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 08:52:32 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "duhu5ti68x"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E9kvEjzFy9+mAcejnv2H3sOgfZ/Mq38HZG/aVVnpDoI="
+        },
+        {
+          "Name": "label",
+          "Value": "Data/PoisciBesede.json.gz"
+        }
+      ]
+    },
+    {
       "Route": "Data/PoisciBesede.json",
       "AssetFile": "Data/PoisciBesede.json.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.008928571429"
+          "Quality": "0.001564945227"
         }
       ],
       "ResponseHeaders": [
@@ -27,7 +188,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "111"
+          "Value": "638"
         },
         {
           "Name": "Content-Type",
@@ -35,15 +196,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s=\""
+          "Value": "\"E9kvEjzFy9+mAcejnv2H3sOgfZ/Mq38HZG/aVVnpDoI=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys=\""
+          "Value": "W/\"K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 23 May 2025 14:29:31 GMT"
+          "Value": "Sun, 25 May 2025 08:52:32 GMT"
         },
         {
           "Name": "Vary",
@@ -53,7 +214,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys="
+          "Value": "sha256-K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI="
         }
       ]
     },
@@ -72,7 +233,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "166"
+          "Value": "1737"
         },
         {
           "Name": "Content-Type",
@@ -80,17 +241,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys=\""
+          "Value": "\"K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 23 May 2025 14:29:31 GMT"
+          "Value": "Sun, 25 May 2025 08:52:32 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys="
+          "Value": "sha256-K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI="
         }
       ]
     },
@@ -113,7 +274,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "111"
+          "Value": "638"
         },
         {
           "Name": "Content-Type",
@@ -121,11 +282,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s=\""
+          "Value": "\"E9kvEjzFy9+mAcejnv2H3sOgfZ/Mq38HZG/aVVnpDoI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 23 May 2025 14:29:31 GMT"
+          "Value": "Sun, 25 May 2025 08:52:32 GMT"
         },
         {
           "Name": "Vary",
@@ -135,168 +296,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s="
-        }
-      ]
-    },
-    {
-      "Route": "Data/PoisciBesede.uotb2rkuzb.json",
-      "AssetFile": "Data/PoisciBesede.json.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.008928571429"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "111"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 23 May 2025 14:29:31 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uotb2rkuzb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys="
-        },
-        {
-          "Name": "label",
-          "Value": "Data/PoisciBesede.json"
-        }
-      ]
-    },
-    {
-      "Route": "Data/PoisciBesede.uotb2rkuzb.json",
-      "AssetFile": "Data/PoisciBesede.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "166"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 23 May 2025 14:29:31 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uotb2rkuzb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys="
-        },
-        {
-          "Name": "label",
-          "Value": "Data/PoisciBesede.json"
-        }
-      ]
-    },
-    {
-      "Route": "Data/PoisciBesede.uotb2rkuzb.json.gz",
-      "AssetFile": "Data/PoisciBesede.json.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "111"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 23 May 2025 14:29:31 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uotb2rkuzb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s="
-        },
-        {
-          "Name": "label",
-          "Value": "Data/PoisciBesede.json.gz"
+          "Value": "sha256-E9kvEjzFy9+mAcejnv2H3sOgfZ/Mq38HZG/aVVnpDoI="
         }
       ]
     },

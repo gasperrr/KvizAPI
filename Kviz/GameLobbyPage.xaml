@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kviz.GameLobbyPage"
+             Title="Game Lobby">
+
+    <StackLayout Padding="20" Spacing="15">
+        <Label Text="Waiting for players..."
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+        <Label x:Name="RoomCodeLabel"
+               FontSize="18"
+               TextColor="Gray"
+               HorizontalOptions="Center" />
+
+        <CollectionView x:Name="PlayersListView">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding Name}" FontSize="18" />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Button Text="Start Game"
+                x:Name="StartGameButton"
+                IsVisible="False"
+                Clicked="OnStartGameClicked" />
+    </StackLayout>
+</ContentPage>

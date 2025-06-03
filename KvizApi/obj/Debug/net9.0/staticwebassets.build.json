@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9nhvlBbtcima0OrGqH4kbLz52klFAHY8iabilVi8FhE=",
+  "Hash": "HZW0dQHny8AQncpAWYc7GixSHOzbEiNlMe6tboIADPM=",
   "Source": "KvizApi",
   "BasePath": "_content/KvizApi",
   "Mode": "Default",
@@ -38,12 +38,12 @@
       "OriginalItemSpec": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\TopografskiZnaki.json"
     },
     {
-      "Identity": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\rhb7a1q5an-uotb2rkuzb.gz",
+      "Identity": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\rhb7a1q5an-duhu5ti68x.gz",
       "SourceId": "KvizApi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/KvizApi",
-      "RelativePath": "Data/PoisciBesede#[.{fingerprint=uotb2rkuzb}]?.json.gz",
+      "RelativePath": "Data/PoisciBesede#[.{fingerprint=duhu5ti68x}]?.json.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -52,8 +52,8 @@
       "RelatedAsset": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\PoisciBesede.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "m98yxyc131",
-      "Integrity": "phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s=",
+      "Fingerprint": "lihd1fhxjd",
+      "Integrity": "E9kvEjzFy9+mAcejnv2H3sOgfZ/Mq38HZG/aVVnpDoI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\PoisciBesede.json"
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "uotb2rkuzb",
-      "Integrity": "8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys=",
+      "Fingerprint": "duhu5ti68x",
+      "Integrity": "K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Data\\PoisciBesede.json"
@@ -1573,13 +1573,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "Data/PoisciBesede.json",
-      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\rhb7a1q5an-uotb2rkuzb.gz",
+      "Route": "Data/PoisciBesede.duhu5ti68x.json",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\rhb7a1q5an-duhu5ti68x.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.008928571429"
+          "Quality": "0.001564945227"
         }
       ],
       "ResponseHeaders": [
@@ -1589,19 +1589,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "111"
+          "Value": "638"
         },
         {
           "Name": "ETag",
-          "Value": "\"phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s=\""
+          "Value": "\"E9kvEjzFy9+mAcejnv2H3sOgfZ/Mq38HZG/aVVnpDoI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 23 May 2025 14:29:31 GMT"
+          "Value": "Sun, 25 May 2025 08:52:32 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -1617,18 +1617,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys=\""
+          "Value": "W/\"K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "duhu5ti68x"
+        },
+        {
+          "Name": "label",
+          "Value": "Data/PoisciBesede.json"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys="
+          "Value": "sha256-K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI="
         }
       ]
     },
     {
-      "Route": "Data/PoisciBesede.json",
+      "Route": "Data/PoisciBesede.duhu5ti68x.json",
       "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\PoisciBesede.json",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1638,7 +1646,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "166"
+          "Value": "1737"
         },
         {
           "Name": "Content-Type",
@@ -1646,121 +1654,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys=\""
+          "Value": "\"K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 23 May 2025 14:29:31 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys="
-        }
-      ]
-    },
-    {
-      "Route": "Data/PoisciBesede.json.gz",
-      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\rhb7a1q5an-uotb2rkuzb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "111"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 23 May 2025 14:29:31 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s="
-        }
-      ]
-    },
-    {
-      "Route": "Data/PoisciBesede.uotb2rkuzb.json",
-      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\rhb7a1q5an-uotb2rkuzb.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.008928571429"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "111"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 23 May 2025 14:29:31 GMT"
+          "Value": "Sun, 25 May 2025 08:52:32 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uotb2rkuzb"
+          "Value": "duhu5ti68x"
         },
         {
           "Name": "label",
@@ -1768,13 +1676,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys="
+          "Value": "sha256-K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI="
         }
       ]
     },
     {
-      "Route": "Data/PoisciBesede.uotb2rkuzb.json",
-      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\PoisciBesede.json",
+      "Route": "Data/PoisciBesede.duhu5ti68x.json.gz",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\rhb7a1q5an-duhu5ti68x.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1783,7 +1691,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "166"
+          "Value": "638"
         },
         {
           "Name": "Content-Type",
@@ -1791,56 +1699,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys=\""
+          "Value": "\"E9kvEjzFy9+mAcejnv2H3sOgfZ/Mq38HZG/aVVnpDoI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 23 May 2025 14:29:31 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uotb2rkuzb"
-        },
-        {
-          "Name": "label",
-          "Value": "Data/PoisciBesede.json"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-8kYdPkuEkJbnw/P7+PFlaGdaYJkZBXV0Kgqkt9aowys="
-        }
-      ]
-    },
-    {
-      "Route": "Data/PoisciBesede.uotb2rkuzb.json.gz",
-      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\rhb7a1q5an-uotb2rkuzb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "111"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 23 May 2025 14:29:31 GMT"
+          "Value": "Sun, 25 May 2025 08:52:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1858,7 +1721,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uotb2rkuzb"
+          "Value": "duhu5ti68x"
         },
         {
           "Name": "label",
@@ -1866,7 +1729,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-phh20kSqSru66OgDGLOnk7qnknCRLjgtqlJv9+lyf+s="
+          "Value": "sha256-E9kvEjzFy9+mAcejnv2H3sOgfZ/Mq38HZG/aVVnpDoI="
+        }
+      ]
+    },
+    {
+      "Route": "Data/PoisciBesede.json",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\rhb7a1q5an-duhu5ti68x.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001564945227"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "638"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E9kvEjzFy9+mAcejnv2H3sOgfZ/Mq38HZG/aVVnpDoI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 08:52:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI="
+        }
+      ]
+    },
+    {
+      "Route": "Data/PoisciBesede.json",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\wwwroot\\Data\\PoisciBesede.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1737"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 08:52:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-K/F0esnyQU388HFs/8f/rSJ35QohjkennKG3f/cOLfI="
+        }
+      ]
+    },
+    {
+      "Route": "Data/PoisciBesede.json.gz",
+      "AssetFile": "C:\\Users\\Uporabnik\\source\\repos\\Kviz\\KvizApi\\obj\\Debug\\net9.0\\compressed\\rhb7a1q5an-duhu5ti68x.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "638"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E9kvEjzFy9+mAcejnv2H3sOgfZ/Mq38HZG/aVVnpDoI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 08:52:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E9kvEjzFy9+mAcejnv2H3sOgfZ/Mq38HZG/aVVnpDoI="
         }
       ]
     },

@@ -17,6 +17,12 @@
     <MauiXaml Update="AnswerPopup.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="GameLobbyPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="MultiplayerLobbyPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="PoisciBesede.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

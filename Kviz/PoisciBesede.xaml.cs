@@ -20,7 +20,9 @@ public partial class PoisciBesedePage : ContentPage
     public char[,] grid = new char[1,1];
 
     List<string> allWords = new List<string>();
+    List<string> selectedWords = new List<string> ();
     Random rnd = new();
+    bool isTappedBusy = false;
 
     int cellSize;
 
@@ -34,14 +36,46 @@ public partial class PoisciBesedePage : ContentPage
         base.OnAppearing();
         InitializeGrid();
 
+        LoadingOverlay.IsVisible = true;
         await LoadWords();
 
         PlaceWords();
         FillEmptyCells();
-        DrawGrid();
+        await DrawGrid();
 
+        LoadingOverlay.IsVisible = false;
+        WordEntry.IsEnabled = true;
+        Preveri.IsEnabled = true;
+
+        WordListLabel.Text = $"Resitve: {string.Join(", ", selectedWords.Select(w => foundWords.Contains(w) ? $" {w}" : w))}";
+
+        var tapGesture = new TapGestureRecognizer();
+        tapGesture.Tapped += async (s, e) =>
+        {
+            if (isTappedBusy)
+                return; // Ignore if already processing
+
+            isTappedBusy = true;
+
+            var TextColor = WordListLabel.BackgroundColor;
+            var TextColor2 = WordListLabel.TextColor;
+
+            WordListLabel.TextColor = Colors.White;
+            await Task.Delay(200);
+
+            WordListLabel.BackgroundColor = TextColor;
+            WordListLabel.TextColor = TextColor2;
+
+            // Mark word as selected or trigger something here
+
+            isTappedBusy = false;
+        };
+
+        WordListLabel.GestureRecognizers.Add(tapGesture);
         this.SizeChanged += OnPageSizeChanged;
     }
+
+
 
     private async Task LoadWords()
     {
@@ -72,7 +106,7 @@ public partial class PoisciBesedePage : ContentPage
 
                 // Pick 15 random words
                 var rnd = new Random();
-                var selectedWords = allWords.OrderBy(_ => rnd.Next()).Take(10).ToList();
+                selectedWords = allWords.OrderBy(_ => rnd.Next()).Take(15).ToList();
 
                 // Example usage: print or populate your grid, etc.
                 foreach (var word in selectedWords)
@@ -148,7 +182,7 @@ public partial class PoisciBesedePage : ContentPage
         PuzzleGrid.VerticalOptions = LayoutOptions.Center;
     }
 
-    void DrawGrid()
+    private async Task DrawGrid()
     {
         PuzzleGrid.Children.Clear();
         cellLabels.Clear();
@@ -188,17 +222,22 @@ public partial class PoisciBesedePage : ContentPage
         }
         PuzzleGrid.WidthRequest = GridSize * cellSize;
         PuzzleGrid.HeightRequest = GridSize * cellSize;
+
+        await Task.CompletedTask;
     }
 
-    void FillEmptyCells()
+    void  FillEmptyCells()
     {
+        string alphabet = "ABCÈDEFGHIJKLMNOPRSŠTUVZŽ";
+        var random = new Random();
+
         for (int row = 0; row < GridSize; row++)
         {
             for (int col = 0; col < GridSize; col++)
             {
                 if (grid[row, col] == '\0')
                 {
-                    grid[row, col] = (char)('A' + rnd.Next(0, 26));
+                    grid[row, col] = alphabet[random.Next(alphabet.Length)];
                 }
             }
         }
@@ -206,7 +245,7 @@ public partial class PoisciBesedePage : ContentPage
 
     void PlaceWords()
     {
-        foreach (var word in allWords)
+        foreach (var word in selectedWords)
         {
             bool placed = false;
             for (int attempts = 0; attempts < 100 && !placed; attempts++)
@@ -320,5 +359,6 @@ public partial class PoisciBesedePage : ContentPage
 
 
         WordEntry.Text = string.Empty;
+
     }
 }
